@@ -1,3 +1,10 @@
+import {Gender} from "../../components/gender";
+import {Brand} from "../../components/brand";
+
 export function Home() {
-    return <div>Home</div>
+    return <>
+        <Gender/>
+        <Brand/>
+
+    </>
 }

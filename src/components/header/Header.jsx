@@ -3,6 +3,7 @@ import {useState} from "react";
 import {FormControl, Icon, Input} from "@chakra-ui/react";
 import {ReactComponent as Logo} from '../../assets/vectors/logo.svg'
 import {Link, NavLink} from "react-router-dom";
+import {FaSearch} from "react-icons/fa";
 
 export function Header() {
     const [burgerActive, setBurgerActive] = useState(false)
@@ -23,7 +24,8 @@ export function Header() {
                        </Link>
                     </div>
                     <FormControl>
-                        <Input/>
+                        <FaSearch className='absolute top-3 left-1'/>
+                        <Input placeholder="Поиск по продукций"/>
                     </FormControl>
                     <ul className='flex'>
                         <li>
