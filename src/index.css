@@ -41,7 +41,8 @@
     height: 805px;
     position: sticky;
 }
-.gender__women-title{
+
+.gender__women-title {
     color: rgb(255, 255, 255);
     font-family: Montserrat, serif;
     padding-top: 364px;
@@ -52,14 +53,14 @@
     text-align: center;
 }
 
-.woman-line{
+.woman-line {
     width: 191px;
     height: 3px;
     background: rgb(217, 217, 217);
     margin-left: 24%;
 }
 
-.brand-title{
+.brand-title {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 50px;
@@ -71,14 +72,13 @@
 }
 
 
-
-.brand-image{
+.brand-image {
     width: 210px;
     background: teal;
     height: 117.78px;
 }
 
-.brand-line{
+.brand-line {
     width: 139px;
     height: 2px;
     border: 1px solid rgb(217, 217, 217);
@@ -87,7 +87,7 @@
     transform: rotate(90.00deg);
 }
 
-.brand-text{
+.brand-text {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 18px;
@@ -97,7 +97,7 @@
     padding-bottom: 13px;
 }
 
-.brand__line{
+.brand__line {
     border: 1px solid rgb(0, 0, 0);
     width: 147px;
     height: 1px;
@@ -106,7 +106,7 @@
     transform: rotate(-180.00deg);
 }
 
-.collection-title{
+.collection-title {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 50px;
@@ -117,7 +117,7 @@
     text-align: center;
 }
 
-.collection-image{
+.collection-image {
     position: absolute;
     width: 420px;
     height: 534px;
@@ -127,7 +127,7 @@
     bottom: -1438px;
 }
 
-.collection-text{
+.collection-text {
     color: rgb(65, 65, 65);
     font-family: Montserrat, sans-serif;
     margin-top: 50px;
@@ -137,11 +137,11 @@
     text-align: center;
 }
 
-.collection-look{
+.collection-look {
     margin-left: 43%;
 }
 
-.collection-more{
+.collection-more {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -150,4 +150,30 @@
     margin-top: 67px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.product__content {
+    background: url("../src/assets/images/product-bg.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 233px;
+    width: 1895px;
+    margin-top: 97px;
+    height: 805px;
+}
+
+.product-text{
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.Phone{
+    box-shadow: 0px 4px 65px 0px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(45.00deg, rgb(249, 249, 249) 0%,rgb(255, 255, 255) 100%);
+    width: 1530px;
+    height: 230px;
 }
