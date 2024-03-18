@@ -1,0 +1,16 @@
+<svg width="37.000000" height="33.000000" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip114_98">
+			<rect id="image (5) 1" width="37.000000" height="33.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="image (5) 1" width="37.000000" height="33.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip114_98)">
+		<path id="Vector" d="M0 18L18 0L32 0L32 14L14 32L0 18ZM18 1L31 1L31 14L14 31L1 18L18 1ZM25 4C26.7 4 28 5.29 28 7C28 8.7 26.7 10 25 10C23.3 10 22 8.7 22 7C22 5.29 23.3 4 25 4ZM25 5C26.1 5 27 5.89 27 7C27 8.1 26.1 9 25 9C23.89 9 23 8.1 23 7C23 5.89 23.89 5 25 5ZM14 21L9.8 23L10.8 18.6L8 15.5L12 15L14 11L16 15L20 15.5L17.2 18.6L18.2 23L14 21ZM14 19.89L11.2 21.29L11.8 18.29L10 16.2L12.7 15.89L14 13.2L15.3 15.89L18 16.2L16.1 18.29L16.79 21.29L14 19.89Z" fill="#969696" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M19 33L17 31L18 31L19 32L36 15L36 2L33 2L33 1L37 1L37 15L19 33Z" fill="#969696" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M14 32L0 18L18 0L32 0L32 14L14 32ZM31 1L18 1L1 18L14 31L31 14L31 1ZM10.8 18.6L8 15.5L12 15L14 11L16 15L20 15.5L17.2 18.6L18.2 23L14 21L9.8 23L10.8 18.6ZM14 19.89L16.79 21.29L16.1 18.29L18 16.2L15.3 15.89L14 13.2L12.7 15.89L10 16.2L11.89 18.29L11.3 21.29L14 19.89ZM25 4C26.7 4 28 5.29 28 7C28 8.7 26.7 10 25 10C23.3 10 22 8.7 22 7C22 5.29 23.3 4 25 4ZM25 9C26.1 9 27 8.1 27 7C27 5.89 26.1 5 25 5C23.89 5 23 5.89 23 7C23 8.1 23.89 9 25 9Z" fill="#969696" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
