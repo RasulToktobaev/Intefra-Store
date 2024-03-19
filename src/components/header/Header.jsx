@@ -24,8 +24,8 @@ export function Header() {
                        </Link>
                     </div>
                     <FormControl>
-                        <FaSearch className='absolute top-3 left-1'/>
-                        <Input placeholder="Поиск по продукций"/>
+                        <FaSearch className='absolute top-3 left-5'/>
+                        <Input className="!pl-16" placeholder="Поиск по продукций"/>
                     </FormControl>
                     <ul className='flex'>
                         <li>

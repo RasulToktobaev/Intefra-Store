@@ -6,8 +6,8 @@ import brandFive from '../../assets/images/brandFive.png'
 import brandSix from '../../assets/images/brandSix.png'
 
 export function Brand() {
-    return(
-        <div>
+    return (
+        <section>
             <h2 className="brand-title">ТОП-БРЕНДЫ</h2>
             <div className="container flex">
                 <div className="border-solid px-6 border-r border-gray">
@@ -35,6 +35,6 @@ export function Brand() {
                 <h4 className="brand-text">ВСЕ БРЕНДЫ</h4>
                 <span className="brand__line"></span>
             </div>
-        </div>
+        </section>
     )
 }

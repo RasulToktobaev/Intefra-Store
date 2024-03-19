@@ -152,7 +152,7 @@
     text-transform: uppercase;
 }
 
-.product{
+.product {
     position: relative;
 }
 
@@ -228,7 +228,7 @@
     position: relative;
 }
 
-.work-line{
+.work-line {
     height: 188px;
     width: 2px;
     border: 1px solid rgb(217, 217, 217);
@@ -237,7 +237,7 @@
     bottom: -1px;
 }
 
-.work-line-two{
+.work-line-two {
     height: 188px;
     width: 2px;
     border: 1px solid rgb(217, 217, 217);
@@ -246,7 +246,7 @@
     bottom: -1px;
 }
 
-.work-line-three{
+.work-line-three {
     height: 188px;
     width: 2px;
     border: 1px solid rgb(217, 217, 217);
@@ -255,7 +255,7 @@
     bottom: -1px;
 }
 
-.work-text{
+.work-text {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 14px;
@@ -265,7 +265,7 @@
     text-align: center;
 }
 
-.work-text-two{
+.work-text-two {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 14px;
@@ -276,10 +276,193 @@
     padding-right: 40px;
 }
 
-.work-svg{
+.work-svg {
     margin-left: 12px;
 }
 
-.work-svg-two{
+.work-svg-two {
     margin-left: 50px;
+}
+
+.footer-content {
+    margin-top: 107px;
+    display: flex;
+    gap: 140px;
+}
+
+.footer-logo-text {
+    color: rgb(150, 150, 150);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+    margin-top: 29px;
+}
+
+.footer-logo-text-two {
+    color: rgb(150, 150, 150);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+    margin-top: 41px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-list-item {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+}
+
+.footer-office {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-office-one {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-office-text {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: right;
+}
+
+.footer-office-two {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+
+.footer-office-text-two {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: right;
+}
+
+.footer-office-app {
+    display: flex;
+    gap: 15px;
+    margin-top: 23px;
+    margin-left: 260px;
+}
+
+.purfume-left {
+    background: url("/src/assets/images/rouge.png") center/ cover no-repeat;
+    width: 960px;
+    height: 805px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 115px;
+}
+
+.purfume-left-btn{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 72px;
+    padding: 20px 60px;
+    margin-top: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 390px;
+    &:hover{
+        background: slategray;
+        transition: 0.5s;
+    }
+}
+
+.purfume-left-text{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    margin-top: 36px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.purfume-left-title{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat,sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: right;
+}
+
+.purfume-right{
+    background: url("/src/assets/images/rosso.png") center/ cover no-repeat;
+    width: 960px;
+    height: 805px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 115px;
+}
+
+.purfume-right-btn{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    box-sizing: border-box;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 72px;
+    padding: 20px 35px;
+    margin-top: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 390px;
+    &:hover{
+        background: orange;
+        transition: 0.5s;
+    }
+}
+
+.purfume-right-title{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat,sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: left;
+}
+
+.purfume-right-text{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    margin-top: 78px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
 }

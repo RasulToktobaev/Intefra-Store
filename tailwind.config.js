@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     colors:{
+      orange: 'rgb(229, 48, 48)',
       black:'#190404',
       lightblack:'#333333',
       darkgrey: '#6A6A6A',
