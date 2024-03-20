@@ -1,11 +1,13 @@
 import {Work} from "../../components/work";
 import {Filtered} from "../../components/collections";
+import {Cards} from "../../components/cards";
 
-export function Collections () {
+export function Collections() {
     return (
         <>
-        <Filtered/>
-        <Work/>
+            <Filtered/>
+            <Cards/>
+            <Work/>
         </>
     )
 }
