@@ -10,6 +10,9 @@ module.exports = {
       gray:'#969696',
       white: '#f9f9f9',
     },
+    background:{
+      shadow:'rgba(0, 0, 0, 0.05)',
+    },
     extend: {
     },
   },

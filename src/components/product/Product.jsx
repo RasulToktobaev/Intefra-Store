@@ -15,6 +15,8 @@ export function Product() {
                     <input placeholder="Имя" className="product-name"/>
                     <input type="number" placeholder="Телефон" className="product-number"/>
                     <Button
+                        marginBottom="5px"
+                        borderRadius="none"
                         height='48px'
                         width='311px'
                         border="1px solid gray"

@@ -9,7 +9,7 @@ export function Prices () {
     return (
             <section className="items">
                 <div className="container">
-                    <h2 className="font-semibold text-center text-4xl my-10 " style={{ color: 'red' }}>СКИДКИ</h2>
+                    <h2 className="font-semibold text-center text-4xl my-10 " style={{ color: 'red', fontSize:"55px", marginBottom:'10%', marginTop:'90px', fontWeight:"300" }}>СКИДКИ</h2>
                     <Swiper
                         modules={[Navigation]}
                         navigation={true}
@@ -21,50 +21,50 @@ export function Prices () {
                     >
                         <SwiperSlide>
                             <div >
-                                <img src={item1} alt="Slide 1" className="w-full h-auto relative"/>
+                                <img src={item1} alt="Slide 1" className="swiper-image relative"/>
                                 <div className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl" style={{background:"red"}}>-70%</div>
-                                <p className="text-center mt-2">Saint Laurent</p>
-                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red' }}> 96 000 ₽</span></p>
+                                <p className="swiper-text">Saint Laurent</p>
+                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red', fontWeight:'700' }}> 96 000 ₽</span></p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div >
-                                <img src={item2} alt="Slide 1" className="w-full h-auto relative"/>
+                                <img src={item2} alt="Slide 1" className="swiper-image relative"/>
                                 <div className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl" style={{background:"red"}}>-70%</div>
-                                <p className="text-center mt-2">BRUNELLO CUCINELLI</p>
-                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red' }}> 96 000 ₽</span></p>
+                                <p className="swiper-text">BRUNELLO CUCINELLI</p>
+                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red', fontWeight:'700' }}> 96 000 ₽</span></p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div >
-                                <img src={item3} alt="Slide 1" className="w-full h-auto relative"/>
+                                <img src={item3} alt="Slide 1" className="swiper-image relative"/>
                                 <div className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl" style={{background:"red"}}>-70%</div>
-                                <p className="text-center mt-2">BRUNELLO CUCINELLI</p>
-                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red' }}> 96 000 ₽</span></p>
+                                <p className="swiper-text">BRUNELLO CUCINELLI</p>
+                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red', fontWeight:'700' }}> 96 000 ₽</span></p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div >
-                                <img src={item1} alt="Slide 1" className="w-full h-auto relative"/>
+                                <img src={item1} alt="Slide 1" className="swiper-image relative"/>
                                 <div className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl" style={{background:"red"}}>-70%</div>
-                                <p className="text-center mt-2">Saint Laurent</p>
-                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red' }}> 96 000 ₽</span></p>
+                                <p className="swiper-text">Saint Laurent</p>
+                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red', fontWeight:'700' }}> 96 000 ₽</span></p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div >
-                                <img src={item2} alt="Slide 1" className="w-full h-auto relative"/>
+                                <img src={item2} alt="Slide 1" className="swiper-image relative"/>
                                 <div className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl" style={{background:"red"}}>-70%</div>
-                                <p className="text-center mt-2">BRUNELLO CUCINELLI</p>
-                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red' }}> 96 000 ₽</span></p>
+                                <p className="swiper-text">BRUNELLO CUCINELLI</p>
+                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red', fontWeight:'700' }}> 96 000 ₽</span></p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div >
-                                <img src={item3} alt="Slide 1" className="w-full h-auto relative"/>
+                                <img src={item3} alt="Slide 1" className="swiper-image relative"/>
                                 <div className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl" style={{background:"red"}}>-70%</div>
-                                <p className="text-center mt-2">BRUNELLO CUCINELLI</p>
-                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red' }}> 96 000 ₽</span></p>
+                                <p className="swiper-text">BRUNELLO CUCINELLI</p>
+                                <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span style={{ color: 'red', fontWeight:'700' }}> 96 000 ₽</span></p>
                             </div>
                         </SwiperSlide>
 
@@ -72,8 +72,8 @@ export function Prices () {
                     </Swiper>
 
                 </div>
-                <p className="text-base font-semibold uppercase text-center border-solid border-b border-gray w-fit mx-auto">СМОТРЕТЬ
-                    БОЛЬШЕ</p>
+                <p style={{marginTop:'10%'}} className="text-base font-semibold uppercase text-center border-solid border-b border-gray w-fit mx-auto">СМОТРЕТЬ
+                    ВСЕ</p>
             </section>
     )
 }

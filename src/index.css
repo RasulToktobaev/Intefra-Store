@@ -377,7 +377,7 @@
     padding-right: 115px;
 }
 
-.purfume-left-btn{
+.purfume-left-btn {
     color: rgb(255, 255, 255);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -391,13 +391,14 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 390px;
-    &:hover{
+
+    &:hover {
         background: slategray;
         transition: 0.5s;
     }
 }
 
-.purfume-left-text{
+.purfume-left-text {
     color: rgb(255, 255, 255);
     font-family: Montserrat, sans-serif;
     margin-top: 36px;
@@ -408,16 +409,16 @@
     text-transform: uppercase;
 }
 
-.purfume-left-title{
+.purfume-left-title {
     color: rgb(255, 255, 255);
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 36px;
     font-weight: 300;
     line-height: 120%;
     text-align: right;
 }
 
-.purfume-right{
+.purfume-right {
     background: url("/src/assets/images/rosso.png") center/ cover no-repeat;
     width: 960px;
     height: 805px;
@@ -427,7 +428,7 @@
     padding-left: 115px;
 }
 
-.purfume-right-btn{
+.purfume-right-btn {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -441,22 +442,23 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 390px;
-    &:hover{
+
+    &:hover {
         background: orange;
         transition: 0.5s;
     }
 }
 
-.purfume-right-title{
+.purfume-right-title {
     color: rgb(255, 255, 255);
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 36px;
     font-weight: 300;
     line-height: 120%;
     text-align: left;
 }
 
-.purfume-right-text{
+.purfume-right-text {
     color: rgb(255, 255, 255);
     font-family: Montserrat, sans-serif;
     margin-top: 78px;
@@ -465,4 +467,88 @@
     line-height: 120%;
     text-align: center;
     text-transform: uppercase;
+}
+
+.swiper-image {
+    width: 350px;
+    height: 390px;
+    margin-left: 40px;
+}
+
+.swiper-text {
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.items-title {
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: center;
+}
+
+.items-text {
+    color: rgb(150, 150, 150);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.line-through {
+    color: rgb(150, 150, 150);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    text-decoration-line: line-through;
+}
+
+/*new pages Collections*/
+
+.filtered {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtered-option {
+    display: flex;
+    justify-content: center;
+}
+
+.filtered-sort{
+    display: flex;
+    margin-top: 44px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.filtered-sort-text{
+    color: rgb(150, 150, 150);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.filtered-sort-description{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
 }
