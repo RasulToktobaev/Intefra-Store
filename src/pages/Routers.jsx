@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import {Home} from "./home";
 import {BaseLayout} from "../layouts/baseLayout";
 import {Collections} from "./collections";
+import {CollectionDetail} from "./detail";
 
 const Routers = () => {
     return (
@@ -12,7 +13,7 @@ const Routers = () => {
             <Route path='/catalog' element={<h2>catalog</h2>}/>
             <Route path='/catalog/:gender' element={<h2>gender</h2>}/>
             <Route path='/collection' element={<Collections/>}/>
-            <Route path='/collection/:detailSlug' element={<h2>collection detail</h2>}/>
+            <Route path='/collection/:detailSlug' element={<CollectionDetail/>}/>
             <Route path='/products/:productSlug' element={<h2>products detail</h2>}/>
             <Route path='/cart' element={<h2>cart</h2>}/>
             <Route path='/payment' element={<h2>payment</h2>}/>
