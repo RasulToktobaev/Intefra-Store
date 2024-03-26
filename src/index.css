@@ -528,7 +528,7 @@
 .filtered-sort{
     display: flex;
     margin-top: 44px;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -538,7 +538,8 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
-    text-align: left;
+
+
 }
 
 .filtered-sort-description{

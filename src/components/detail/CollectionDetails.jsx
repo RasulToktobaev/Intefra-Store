@@ -1,10 +1,16 @@
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import React, {useCallback, useRef, useState} from "react";
+import React, {useState} from "react";
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import {CollectionDetailsCard} from "../collectionDetailsCard";
 import DetailMen from "../../assets/images/details-men.png"
+import detailOne from "../../assets/images/details-men-one.png"
+import detailTwo from "../../assets/images/details-men-two.png"
+import detailThree from "../../assets/images/details-men-three.png"
+import collectionMen from "../../assets/images/collection-three.png"
+import collectionMenOne from "../../assets/images/collection-one.png"
+import collectionMenTwo from "../../assets/images/collection-two.png"
 
 
 
@@ -33,34 +39,22 @@ export function CollectionDetails () {
                         className="mySwiper2"
                     >
                         <SwiperSlide>
-                            <img src={DetailMen} />
+                            <img  src={DetailMen} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            <img style={{width:'620px', height:"816px"}} src={collectionMen} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            <img style={{width:'620px', height:"816px"}} src={collectionMenTwo} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            <img style={{width:'620px', height:"816px"}} src={collectionMenOne} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            <img src={DetailMen}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            <img style={{width:'620px', height:"816px"}} src={collectionMen} />
                         </SwiperSlide>
                     </Swiper>
                     <Swiper
@@ -73,35 +67,20 @@ export function CollectionDetails () {
                         className="mt-5"
                     >
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            <img src={detailOne}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            <img src={detailTwo} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            <img src={detailThree} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            <img src={detailOne} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            <img src={detailTwo} />
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                        </SwiperSlide>
-                        {/*<SwiperSlide>*/}
-                        {/*    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />*/}
-                        {/*</SwiperSlide>*/}
-                        {/*<SwiperSlide>*/}
-                        {/*    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />*/}
-                        {/*</SwiperSlide>*/}
-                        {/*<SwiperSlide>*/}
-                        {/*    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />*/}
-                        {/*</SwiperSlide>*/}
-                        {/*<SwiperSlide>*/}
-                        {/*    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />*/}
-                        {/*</SwiperSlide>*/}
                     </Swiper>
                 </div>
 

@@ -4,6 +4,8 @@ import {FormControl, Icon, Input} from "@chakra-ui/react";
 import {ReactComponent as Logo} from '../../assets/vectors/logo.svg'
 import {Link, NavLink} from "react-router-dom";
 import {FaSearch} from "react-icons/fa";
+import { BreadNavigation} from "../breadNavigation";
+
 
 export function Header() {
     const [burgerActive, setBurgerActive] = useState(false)
@@ -36,6 +38,7 @@ export function Header() {
                         </li>
                     </ul>
                 </div>
+                <BreadNavigation/>
             </div>
         </div>
 )

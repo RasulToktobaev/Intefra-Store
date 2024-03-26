@@ -27,8 +27,11 @@ export function Filtered() {
             </div>
             <div className="filtered-sort">
                 <p className="filtered-sort-text">Сортировать</p>
-                <p className=" border-gray border-solid border-b filtered-sort-description">по популярности</p>
-                <Selected/>
+                <select >
+                    <option value="">по популярности</option>
+                    <option value="">по годам</option>
+                    <option value="">по запросам</option>
+                </select>
             </div>
         </div>
     )

@@ -4,6 +4,7 @@ import {Home} from "./home";
 import {BaseLayout} from "../layouts/baseLayout";
 import {Collections} from "./collections";
 import {CollectionDetail} from "./detail";
+import {Shoes} from "./shoes";
 
 const Routers = () => {
     return (
@@ -17,6 +18,7 @@ const Routers = () => {
             <Route path='/products/:productSlug' element={<h2>products detail</h2>}/>
             <Route path='/cart' element={<h2>cart</h2>}/>
             <Route path='/payment' element={<h2>payment</h2>}/>
+            <Route path='/shoes' element={<Shoes/>}/>
         </Route>
         </Routes>
     );
