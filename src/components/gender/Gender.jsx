@@ -1,7 +1,7 @@
 
 export function Gender () {
     return(
-            <section className="flex">
+            <section className="flex gender-content">
                     <div className="gender__men">
                         <div className="gender__men-title">МУЖСКОЕ</div>
                         <div className="gender-line"></div>

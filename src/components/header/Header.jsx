@@ -14,8 +14,8 @@ export function Header() {
     return (
         <div>
             <div className='container'>
-                <div className='flex gap-4 justify-between pt-2 pb-7'>
-                    <div className='flex items-center gap-4'>
+                <div className='header-content  flex gap-4 justify-between pt-2 pb-7'>
+                    <div className=' header-content-logo flex items-center gap-4'>
                         <Icon onClick={onSwitchBurger}
                               as={burgerActive ? CloseIcon : HamburgerIcon}
                               w='34px'
@@ -27,9 +27,9 @@ export function Header() {
                     </div>
                     <FormControl>
                         <FaSearch className='absolute top-3 left-5'/>
-                        <Input className="!pl-16" placeholder="Поиск по продукций"/>
+                        <Input className="header-input !pl-16" placeholder="Поиск по продукций"/>
                     </FormControl>
-                    <ul className='flex'>
+                    <ul className='flex header-list'>
                         <li>
                             <NavLink to='./shipping' className=' inline-block h-full w-[130px] grid place-items-center hover:bg-[#dedede] transition-all'>Доставка</NavLink>
                         </li>

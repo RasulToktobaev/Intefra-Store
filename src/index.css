@@ -10,8 +10,10 @@
 }
 
 
+
+
 .gender__men {
-    background: url("../src/assets/images/gender__men.png") center/ cover no-repeat;
+    background: url("../src/assets/images/gender__men.png");
     width: 960px;
     height: 805px;
 }
@@ -36,7 +38,7 @@
 
 
 .gender__woman {
-    background: url("../src/assets/images/gender__woman.png") center/ cover no-repeat;
+    background: url("../src/assets/images/gender__woman.png");
     width: 960px;
     height: 805px;
     position: sticky;
@@ -71,10 +73,15 @@
     margin-bottom: 75px;
 }
 
+.brand-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 .brand-image {
     width: 210px;
-    background: teal;
     height: 117.78px;
 }
 

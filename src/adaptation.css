@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 700px;
+        width: auto;
+        margin: 0 auto;
+
+        .header-content {
+            display: flex;
+            margin-left: 70%;
+        }
+
+        .header-nav {
+            display: flex;
+            margin-left: 130%;
+        }
+    }
+
+    .header-content-logo {
+        display: flex;
+
+    }
+
+    .css-1cjy4zv {
+        border-radius: 30%;
+    }
+
+    .header-list {
+        margin-left: 100%;
+    }
+
+    .gender-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gender__men {
+        background: url("../src/assets/images/gender__men.png") center/cover no-repeat;
+        width: 1900px;
+        height: 1250px;
+    }
+
+    .gender__men-title {
+        font-size: 120px;
+        font-weight: 700;
+    }
+
+    .gender-line {
+        width: 350px;
+        height: 9px;
+        margin-left: 45%;
+    }
+
+    .gender__woman {
+        width: 1900px;
+        position: relative;
+        height: 1140px;
+        background: url("../src/assets/images/gender__woman.png") center/ cover no-repeat;
+        object-fit: cover;
+    }
+
+    .gender__women-title {
+        font-size: 120px;
+        font-weight: 700;
+    }
+
+    .woman-line {
+        width: 350px;
+        margin-left: 33%;
+        height: 9px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 1400px;
+        width: 100% ;
+    }
+    .brand {
+
+    }
+
+    .brand-title {
+        font-size: 80px;
+        margin-left: 50%;
+    }
+
+    .brand-content {
+        margin-left: 60%;
+        display: flex;
+    }
+
+    .brand-image {
+
+    }
+
+    .brand-box {
+
+    }
+}

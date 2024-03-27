@@ -7,26 +7,26 @@ import brandSix from '../../assets/images/brandSix.png'
 
 export function Brand() {
     return (
-        <section>
+        <section className="brand">
             <h2 className="brand-title">ТОП-БРЕНДЫ</h2>
-            <div className="container flex">
-                <div className="border-solid px-6 border-r border-gray">
-                    <img src={brandOne} alt=""/>
+            <div className="container flex brand-content">
+                <div className=" brand-box border-solid px-6 border-r border-gray">
+                    <img className="brand-image" src={brandOne} alt=""/>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <img src={brandTwo} alt=""/>
+                    <img className="brand-image" src={brandTwo} alt=""/>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <img src={brandThree} alt=""/>
+                    <img className="brand-image" src={brandThree} alt=""/>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <img src={brandFour} alt=""/>
+                    <img className="brand-image" src={brandFour} alt=""/>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <img src={brandFive} alt=""/>
+                    <img className="brand-image" src={brandFive} alt=""/>
                 </div>
                 <div className="">
-                    <img src={brandSix} alt=""/>
+                    <img className="brand-image" src={brandSix} alt=""/>
                 </div>
 
             </div>

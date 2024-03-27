@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 export function BreadNavigation () {
     return (
-        <div className="flex justify-center mb-7">
+        <div className=" header-nav flex justify-center mb-7">
             <Breadcrumb spacing='8px' separator={<ChevronRightIcon color='gray.500' />}>
                 <BreadcrumbItem>
                     <BreadcrumbLink as={Link} to={'/'}>ГЛАВНАЯ</BreadcrumbLink>
