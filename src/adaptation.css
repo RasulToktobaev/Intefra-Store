@@ -71,30 +71,40 @@
     }
 }
 
-@media (max-width: 768px) {
-    .container{
-        max-width: 1400px;
-        width: 100% ;
-    }
-    .brand {
 
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 700px;
+        width: 100%;
     }
 
     .brand-title {
-        font-size: 80px;
-        margin-left: 50%;
+        font-size: 70px;
+        margin-bottom: 30px;
+        text-align: right;
     }
 
     .brand-content {
-        margin-left: 60%;
-        display: flex;
+        justify-content: center;
+        margin-left: 25%;
     }
 
     .brand-image {
-
+        width: 150px;
+        height: 85px;
+        margin-bottom: 15px;
     }
 
-    .brand-box {
-
+    .brand__line {
+        width: 145px;
+        margin-left: 30%;
     }
+
+    .brand-text{
+        margin-left: 30%;
+        font-size: 30px;
+    }
+
 }

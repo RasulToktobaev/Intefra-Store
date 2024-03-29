@@ -5,15 +5,20 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+import {Provider} from "react-redux";
+import store from "./store";
 
 
 
 function App() {
     return (
       <ChakraProvider>
-            <BrowserRouter>
-              <Routers/>
-            </BrowserRouter>
+          <Provider store={store}>
+              <BrowserRouter>
+                  <Routers/>
+              </BrowserRouter>
+          </Provider>
+
       </ChakraProvider>
     );
 }

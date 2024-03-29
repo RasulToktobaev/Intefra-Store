@@ -641,3 +641,8 @@
     text-decoration-line: line-through;
     margin-right: 118px;
 }
+
+.card-image{
+    width: 420px;
+    height: 534px;
+}

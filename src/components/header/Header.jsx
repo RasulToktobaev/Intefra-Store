@@ -2,13 +2,16 @@ import {CloseIcon, HamburgerIcon} from '@chakra-ui/icons'
 import {useState} from "react";
 import {FormControl, Icon, Input} from "@chakra-ui/react";
 import {ReactComponent as Logo} from '../../assets/vectors/logo.svg'
-import {Link, NavLink} from "react-router-dom";
+import {Link, NavLink, useLocation} from "react-router-dom";
 import {FaSearch} from "react-icons/fa";
 import { BreadNavigation} from "../breadNavigation";
+import {RoutesUrls} from "../../constans/routesUrls";
 
 
 export function Header() {
     const [burgerActive, setBurgerActive] = useState(false)
+
+    const {pathname} = useLocation()
 
     const onSwitchBurger = () => setBurgerActive(prev => !prev)
     return (
@@ -21,7 +24,7 @@ export function Header() {
                               w='34px'
                               h='34px'
                         />
-                       <Link to='/'>
+                       <Link to={RoutesUrls.home.path}>
                            <Logo/>
                        </Link>
                     </div>
@@ -39,6 +42,7 @@ export function Header() {
                     </ul>
                 </div>
                 <BreadNavigation/>
+
             </div>
         </div>
 )
