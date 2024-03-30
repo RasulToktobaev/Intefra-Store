@@ -5,6 +5,7 @@ import {Navigation} from 'swiper/modules';
 import item2 from "../../assets/images/newsItem2.png"
 import item3 from "../../assets/images/newsItem3.png"
 import {FaChevronRight, FaChevronLeft} from "react-icons/fa6";
+import {Link} from "react-router-dom";
 
 
 export function Prices() {
@@ -47,7 +48,7 @@ export function Prices() {
                                 <img src={item1} alt="Slide 1" className="swiper-image relative"/>
                                 <div
                                     className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                    style={{background: "red"}}>-70%
+                                    style={{background: "red", borderRadius:'100%', fontSize:'20px'}}>-70%
                                 </div>
                                 <p className="swiper-text">Saint Laurent</p>
                                 <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span
@@ -59,7 +60,7 @@ export function Prices() {
                                 <img src={item2} alt="Slide 1" className="swiper-image relative"/>
                                 <div
                                     className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                    style={{background: "red"}}>-70%
+                                    style={{background: "red", borderRadius:'100%', fontSize:'20px'}}>-70%
                                 </div>
                                 <p className="swiper-text">BRUNELLO CUCINELLI</p>
                                 <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span
@@ -71,7 +72,7 @@ export function Prices() {
                                 <img src={item3} alt="Slide 1" className="swiper-image relative"/>
                                 <div
                                     className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                    style={{background: "red"}}>-70%
+                                    style={{background: "red", borderRadius:'100%', fontSize:'20px'}}>-70%
                                 </div>
                                 <p className="swiper-text">BRUNELLO CUCINELLI</p>
                                 <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span
@@ -83,7 +84,7 @@ export function Prices() {
                                 <img src={item1} alt="Slide 1" className="swiper-image relative"/>
                                 <div
                                     className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                    style={{background: "red"}}>-70%
+                                    style={{background: "red", borderRadius:'100%', fontSize:'20px'}}>-70%
                                 </div>
                                 <p className="swiper-text">Saint Laurent</p>
                                 <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span
@@ -95,7 +96,7 @@ export function Prices() {
                                 <img src={item2} alt="Slide 1" className="swiper-image relative"/>
                                 <div
                                     className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                    style={{background: "red"}}>-70%
+                                    style={{background: "red", borderRadius:'100%', fontSize:'20px'}}>-70%
                                 </div>
                                 <p className="swiper-text">BRUNELLO CUCINELLI</p>
                                 <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span
@@ -107,7 +108,7 @@ export function Prices() {
                                 <img src={item3} alt="Slide 1" className="swiper-image relative"/>
                                 <div
                                     className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                    style={{background: "red"}}>-70%
+                                    style={{background: "red", borderRadius:'100%', fontSize:'20px'}}>-70%
                                 </div>
                                 <p className="swiper-text">BRUNELLO CUCINELLI</p>
                                 <p className="text-center mt-2"><span className="line-through">123 000 ₽</span> <span
@@ -118,26 +119,25 @@ export function Prices() {
                     <div className="absolute top-1/2 z-10 w-full">
                         <button
                             onClick={handlePrev}
-                            className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-70px]">
+                            className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
                             <FaChevronLeft
                                 size="34"
                             />
                         </button>
                         <button
                             onClick={handleNext}
-                            className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-70px]">
+                            className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-10px]">
                             <FaChevronRight
                                 size="34"
                             />
                         </button>
                     </div>
                 </div>
-
-
             </div>
-            <p style={{marginTop: '10%'}}
-               className="text-base font-semibold uppercase text-center border-solid border-b border-gray w-fit mx-auto">СМОТРЕТЬ
-                ВСЕ</p>
+            <div className="mt-40 text-base font-semibold uppercase text-center border-solid border-b border-gray w-fit mx-auto">
+                <Link to={'#'}>СМОТРЕТЬ ВСЁ</Link>
+            </div>
+
         </section>
     )
 }

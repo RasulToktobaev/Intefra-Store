@@ -6,6 +6,7 @@ import item1 from "../../assets/images/newsItem1.png"
 import item2 from "../../assets/images/newsItem2.png"
 import item3 from "../../assets/images/newsItem3.png"
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa6";
+import {Link} from "react-router-dom";
 
 export function Items() {
 
@@ -27,10 +28,9 @@ export function Items() {
                 <h2 className=" items-title font-semibold text-center text-3xl mb-16">НОВИНКИ</h2>
                 <p className=" items-text text-sm text-gray-500 mb-4 text-center">643 ОБНОВЛЕНИЙ</p>
 
-                <div className="relative">
+                <div className="relative mt-20 ">
                     <Swiper modules={[Navigation]}
                             ref={sliderRef}
-                            spaceBetween={35}
                             slidesPerView={4}
                             loop={true}
                             onSlideChange={() => console.log('slide change')}
@@ -60,14 +60,14 @@ export function Items() {
                     <div className="absolute  z-10 w-full">
                         <button
                             onClick={handlePrev}
-                            className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-70px] bottom-[150px]">
+                            className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-1px] bottom-[50px]">
                             <FaChevronLeft
                                 size="34"
                             />
                         </button>
                         <button
                             onClick={handleNext}
-                            className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-70px] bottom-[150px] ">
+                            className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-1px] bottom-[50px] ">
                             <FaChevronRight
                                 size="34"
                             />
@@ -75,10 +75,11 @@ export function Items() {
                     </div>
                 </div>
 
-
             </div>
-            <p className="text-base font-semibold uppercase text-center border-solid border-b border-gray w-fit mx-auto mt-20">СМОТРЕТЬ
-                ВСЁ</p>
+            <div className=" text-base font-semibold uppercase text-center border-solid border-b border-gray w-fit mx-auto mt-28 ">
+                <Link  to={'#'}>СМОТРЕТЬ ВСЁ</Link>
+            </div>
+
         </section>
     )
 }

@@ -1,12 +1,14 @@
 import collectionOne from "../../assets/images/collection-one.png"
 import collectionTwo from "../../assets/images/collection-two.png"
 import collectionThree from "../../assets/images/collection-three.png"
+import {Link} from "react-router-dom";
+import {RoutesUrls} from "../../constans/routesUrls";
 export function Collection() {
     return (
         <section>
             <div className="container">
                 <h2 className="collection-title">КОЛЛЕКЦИЯ</h2>
-                <div className="flex gap-8 ml-28">
+                <div className="flex gap-12 ml-16">
                     <div>
                         <img  src={collectionOne} alt=""/>
                         <p className="collection-text">Спортивный костюм Artigiani, футболка <br/> Artigiani, кеды Santoni</p>
@@ -20,8 +22,8 @@ export function Collection() {
                         <p className="collection-text">Парка Artigiani, джемпер Artigiani <br/>, джинсы Jacob Cohen, челси Santoni</p>
                     </div>
                 </div>
-                <div className= "collection-look border-solid px-6 border-b   w-56   border-gray ">
-                    <h3 className="collection-more">СМОТРЕТЬ БОЛЬШЕ</h3>
+                <div className= "collection-look border-solid px-6 border-b   w-56   border-gray mt-36 ">
+                    <Link  className="collection-more " to={RoutesUrls.collection.path}>СМОТРЕТЬ БОЛЬШЕ</Link>
                 </div>
             </div>
         </section>

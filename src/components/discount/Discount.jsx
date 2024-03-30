@@ -2,7 +2,7 @@ import discountImage from "../../assets/images/discount.png"
 export function Discount () {
     return (
             <section className="discount mt-10 relative flex justify-center ">
-                <div className="discount__image bg-cover bg-no-repeat flex items-center  " style={{ backgroundImage: `url(${discountImage})`, height: '322px', width: '1520px' }}>
+                <div className="discount__image bg-cover bg-no-repeat flex items-center  " style={{ backgroundImage: `url(${discountImage})`, height: '322px', width: '100%' }}>
                     <div className="container">
                         <div className="discount__content flex justify-center items-center">
                             <div className="discount__left text-center">

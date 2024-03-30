@@ -4,6 +4,7 @@ import brandThree from '../../assets/images/brandThree.png'
 import brandFour from '../../assets/images/BrandFour.png'
 import brandFive from '../../assets/images/brandFive.png'
 import brandSix from '../../assets/images/brandSix.png'
+import {Link} from "react-router-dom";
 
 export function Brand() {
     return (
@@ -32,7 +33,7 @@ export function Brand() {
             </div>
 
             <div className="flex justify-center mt-64 relative">
-                <h4 className="brand-text">ВСЕ БРЕНДЫ</h4>
+                <Link className="brand-text" to={'/catalog'}>ВСЕ БРЕНДЫ</Link>
                 <span className="brand__line"></span>
             </div>
         </section>
