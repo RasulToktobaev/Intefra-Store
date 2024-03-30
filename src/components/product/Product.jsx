@@ -11,7 +11,7 @@ export function Product() {
             </div>
             <div className="Phone container">
                 <h3 className="product-title">ОФОРМИТЕ ПОДПИСКУ НА РАССЫЛКУ INTEFRA</h3>
-                <div className="product-main">
+                <div className=" flex container product-main">
                     <input placeholder="Имя" className="product-name"/>
                     <input type="number" placeholder="Телефон" className="product-number"/>
                     <Button

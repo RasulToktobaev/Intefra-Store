@@ -8,7 +8,7 @@ export function Collection() {
         <section>
             <div className="container">
                 <h2 className="collection-title">КОЛЛЕКЦИЯ</h2>
-                <div className="flex gap-12 ml-16">
+                <div className="flex gap-12 ">
                     <div>
                         <img  src={collectionOne} alt=""/>
                         <p className="collection-text">Спортивный костюм Artigiani, футболка <br/> Artigiani, кеды Santoni</p>

@@ -126,7 +126,7 @@ export function Prices() {
                         </button>
                         <button
                             onClick={handleNext}
-                            className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-10px]">
+                            className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-50px]">
                             <FaChevronRight
                                 size="34"
                             />

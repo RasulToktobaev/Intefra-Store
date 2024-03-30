@@ -11,5 +11,9 @@ export const RoutesUrls = {
         path:'/shoes',
         title:'ОБУВЬ',
     },
+    product:{
+        path:'/product',
+        title:'ПОДРОБНО ПРОДУКТ'
+    }
 }
 

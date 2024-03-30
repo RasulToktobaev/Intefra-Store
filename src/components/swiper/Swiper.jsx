@@ -67,7 +67,7 @@ export function Items() {
                         </button>
                         <button
                             onClick={handleNext}
-                            className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-1px] bottom-[50px] ">
+                            className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-20px] bottom-[50px] ">
                             <FaChevronRight
                                 size="34"
                             />

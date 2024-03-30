@@ -13,8 +13,6 @@ import collectionMenOne from "../../assets/images/collection-one.png"
 import collectionMenTwo from "../../assets/images/collection-two.png"
 
 
-
-
 export function CollectionDetails () {
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -42,7 +40,7 @@ export function CollectionDetails () {
                             <img  src={DetailMen} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width:'620px', height:"816px"}} src={collectionMen} />
+                            <img style={{width:'580px', height:"790px"}} src={collectionMen} />
                         </SwiperSlide>
                         <SwiperSlide>
                             <img style={{width:'620px', height:"816px"}} src={collectionMenTwo} />
