@@ -17,8 +17,8 @@ export function Product() {
                     <Button
                         marginBottom="5px"
                         borderRadius="none"
-                        height='48px'
-                        width='311px'
+                        height='40px'
+                        width='300px'
                         border="1px solid gray"
                         background="black"
                         color="white"

@@ -17,14 +17,17 @@ export function CollectionDetailsCard() {
                         <button className="details-btn">56</button>
                     </div>
                 </div>
-                <span className="details-price">123 000 ₽</span>
-                <span style={{color: 'red', fontWeight: '700'}}>96 000 ₽</span>
+                <div >
+                    <span className="details-price mr-4">123 000 ₽</span>
+                    <span style={{color: 'red', fontWeight: '700'}}>96 000 ₽</span>
+                </div>
+
             </div>
 
             <Button colorScheme='blue'
                     background="rgb(25, 4, 4);"
-                    width="187px"
-                    height="47px"
+                    width="160px"
+                    height="38px"
                     borderRadius="none"
 
             >Купить</Button>

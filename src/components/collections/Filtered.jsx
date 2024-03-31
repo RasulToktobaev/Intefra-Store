@@ -9,16 +9,16 @@ export function Filtered() {
                 <Select
                     background="rgba(255,255,255)"
                     borderRadius="none"
-                    width="375px"
-                    height="75px"
+                    width="320px"
+                    height="60px"
                     placeholder='Пол'>
                     <option style={{fontWeight:"600"}} value='option1'>Мужской</option>
                     <option style={{fontWeight:"600"}}  value='option2'>Женский</option>
                 </Select>
                 <Select
                     borderRadius="none"
-                    width="375px"
-                    height="75px"
+                    width="320px"
+                    height="60px"
                     placeholder='Бренд'>
                     <option style={{fontWeight:"600"}}  value='option1'>JACOB COHEN</option>
                     <option style={{fontWeight:"600"}}  value='option2'>SANTONI</option>

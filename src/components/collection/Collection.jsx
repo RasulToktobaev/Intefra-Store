@@ -10,15 +10,15 @@ export function Collection() {
                 <h2 className="collection-title">КОЛЛЕКЦИЯ</h2>
                 <div className="flex gap-12 ">
                     <div>
-                        <img  src={collectionOne} alt=""/>
+                        <img className="collection-img"  src={collectionOne} alt=""/>
                         <p className="collection-text">Спортивный костюм Artigiani, футболка <br/> Artigiani, кеды Santoni</p>
                     </div>
                     <div>
-                        <img src={collectionTwo} alt=""/>
+                        <img className="collection-img" src={collectionTwo} alt=""/>
                         <p className="collection-text">Пуховый жилет Kiton, джинсы Jacob Cohen <br/>, футболка Fedeli, кроссовки  Valentino, <br/> бейсболка Kiton</p>
                     </div>
                     <div>
-                        <img src={collectionThree} alt=""/>
+                        <img className="collection-img" src={collectionThree} alt=""/>
                         <p className="collection-text">Парка Artigiani, джемпер Artigiani <br/>, джинсы Jacob Cohen, челси Santoni</p>
                     </div>
                 </div>

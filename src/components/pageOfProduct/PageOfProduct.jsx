@@ -237,14 +237,14 @@ export function PageOfProduct () {
                         <div className="absolute top-1/2 z-10 w-full">
                             <button
                                 onClick={handlePrev}
-                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-70px]">
+                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
                                 <FaChevronLeft
                                     size="34"
                                 />
                             </button>
                             <button
                                 onClick={handleNext}
-                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-70px]">
+                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
                                 <FaChevronRight
                                     size="34"
                                 />
@@ -337,14 +337,14 @@ export function PageOfProduct () {
                         <div className="absolute top-1/2 z-10 w-full">
                             <button
                                 onClick={handlePrev}
-                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-70px]">
+                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
                                 <FaChevronLeft
                                     size="34"
                                 />
                             </button>
                             <button
                                 onClick={handleNext}
-                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-70px]">
+                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
                                 <FaChevronRight
                                     size="34"
                                 />
@@ -437,14 +437,14 @@ export function PageOfProduct () {
                         <div className="absolute top-1/2 z-10 w-full">
                             <button
                                 onClick={handlePrev}
-                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-70px]">
+                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
                                 <FaChevronLeft
                                     size="34"
                                 />
                             </button>
                             <button
                                 onClick={handleNext}
-                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-70px]">
+                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
                                 <FaChevronRight
                                     size="34"
                                 />
