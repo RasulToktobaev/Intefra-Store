@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -110,6 +113,7 @@
     bottom: 0;
     transform: rotate(-180.00deg);
 }
+
 
 .collection-title {
     color: rgb(51, 51, 51);
@@ -651,6 +655,7 @@
 }
 
 .card-image{
+    object-fit: cover;
     width: 420px;
     height: 534px;
 }

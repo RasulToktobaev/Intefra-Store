@@ -5,9 +5,11 @@ import {Link} from "react-router-dom";
 import {RoutesUrls} from "../../constans/routesUrls";
 export function Collection() {
     return (
-        <section>
+        <section className="collection">
             <div className="container">
-                <h2 className="collection-title">КОЛЛЕКЦИЯ</h2>
+                <div  className="collection-title">
+                    <h2>КОЛЛЕКЦИЯ</h2>
+                </div>
                 <div className="flex gap-12 ">
                     <div>
                         <img className="collection-img"  src={collectionOne} alt=""/>

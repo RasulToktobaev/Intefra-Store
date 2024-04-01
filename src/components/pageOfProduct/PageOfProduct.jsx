@@ -24,16 +24,18 @@ import BrunoMan5 from "../../assets/images/BrunoMan5.png"
 export function PageOfProduct () {
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
-    const sliderRef = useRef(null)
+    const sliderWithBuyingRef = useRef(null)
+    const sliderSameRef = useRef(null)
+    const sliderLookedRef = useRef(null)
 
-    const handlePrev = useCallback(() => {
-        if (!sliderRef.current) return;
-        sliderRef.current.swiper.slidePrev();
+    const handlePrev = useCallback((ref) => {
+        if (!ref.current) return;
+        ref.current.swiper.slidePrev();
     }, []);
 
-    const handleNext = useCallback(() => {
-        if (!sliderRef.current) return;
-        sliderRef.current.swiper.slideNext();
+    const handleNext = useCallback((ref) => {
+        if (!ref.current) return;
+        ref.current.swiper.slideNext();
     }, []);
 
 
@@ -168,7 +170,7 @@ export function PageOfProduct () {
                     <div className="relative">
                         <Swiper
                             modules={[Navigation]}
-                            ref={sliderRef}
+                            ref={sliderWithBuyingRef}
                             spaceBetween={35}
                             slidesPerView={4}
                             loop={true}
@@ -236,14 +238,14 @@ export function PageOfProduct () {
                         </Swiper>
                         <div className="absolute top-1/2 z-10 w-full">
                             <button
-                                onClick={handlePrev}
+                                onClick={() => handlePrev(sliderWithBuyingRef)}
                                 className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
                                 <FaChevronLeft
                                     size="34"
                                 />
                             </button>
                             <button
-                                onClick={handleNext}
+                                onClick={() => handleNext(sliderWithBuyingRef)}
                                 className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
                                 <FaChevronRight
                                     size="34"
@@ -268,7 +270,7 @@ export function PageOfProduct () {
                     <div className="relative">
                         <Swiper
                             modules={[Navigation]}
-                            ref={sliderRef}
+                            ref={sliderSameRef}
                             spaceBetween={35}
                             slidesPerView={4}
                             loop={true}
@@ -336,14 +338,14 @@ export function PageOfProduct () {
                         </Swiper>
                         <div className="absolute top-1/2 z-10 w-full">
                             <button
-                                onClick={handlePrev}
+                                onClick={() => handlePrev(sliderSameRef)}
                                 className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
                                 <FaChevronLeft
                                     size="34"
                                 />
                             </button>
                             <button
-                                onClick={handleNext}
+                                onClick={() => handleNext(sliderSameRef)}
                                 className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
                                 <FaChevronRight
                                     size="34"
@@ -368,7 +370,7 @@ export function PageOfProduct () {
                     <div className="relative">
                         <Swiper
                             modules={[Navigation]}
-                            ref={sliderRef}
+                            ref={sliderLookedRef}
                             spaceBetween={35}
                             slidesPerView={4}
                             loop={true}
@@ -436,14 +438,14 @@ export function PageOfProduct () {
                         </Swiper>
                         <div className="absolute top-1/2 z-10 w-full">
                             <button
-                                onClick={handlePrev}
+                                onClick={() => handlePrev(sliderLookedRef) }
                                 className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
                                 <FaChevronLeft
                                     size="34"
                                 />
                             </button>
                             <button
-                                onClick={handleNext}
+                                onClick={() => handleNext(sliderLookedRef)}
                                 className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
                                 <FaChevronRight
                                     size="34"

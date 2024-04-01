@@ -72,7 +72,6 @@
 }
 
 
-
 @media (max-width: 768px) {
 
     .container {
@@ -81,30 +80,44 @@
     }
 
     .brand-title {
-        font-size: 70px;
+        font-size: 160px;
         margin-bottom: 30px;
-        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 120% ;
     }
 
     .brand-content {
-        justify-content: center;
-        margin-left: 25%;
+        margin-left: 65%;
     }
 
+
     .brand-image {
-        width: 150px;
-        height: 85px;
+        width: 550px;
+        height: 250px;
         margin-bottom: 15px;
     }
 
-    .brand__line {
-        width: 145px;
-        margin-left: 30%;
+
+    .brand-text {
+        margin-left: 120%;
+        font-size: 360%;
+        text-align: center;
     }
 
-    .brand-text{
-        margin-left: 30%;
-        font-size: 30px;
+    .brand__line{
+        margin-left: 120%;
+        width: 30%;
     }
 
+}
+
+@media (max-width: 768px) {
+    .collection{
+
+    }
+    .collection-title{
+        font-size: 100px;
+    }
 }

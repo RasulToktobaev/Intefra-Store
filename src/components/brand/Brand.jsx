@@ -9,7 +9,10 @@ import {Link} from "react-router-dom";
 export function Brand() {
     return (
         <section className="brand">
-            <h2 className="brand-title">ТОП-БРЕНДЫ</h2>
+            <div className="brand-title">
+                <h2>ТОП-БРЕНДЫ</h2>
+            </div>
+
             <div className="container flex brand-content">
                 <div className=" brand-box border-solid px-6 border-r border-gray">
                     <img className="brand-image" src={brandOne} alt=""/>

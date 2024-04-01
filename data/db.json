@@ -6,6 +6,7 @@
       "title": "Hoody Chess",
       "price": 415,
       "priceSale": 200,
+      "gender" : "man",
       "image": {
         "black": "Shop/hoody1.jpg",
         "red": "Shop/hoody1-red.jpg",
