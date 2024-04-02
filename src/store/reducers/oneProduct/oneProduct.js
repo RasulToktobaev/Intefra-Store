@@ -1,16 +1,16 @@
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const getCollection = createAsyncThunk(
-    'get/clothes',
+export const getOneProduct = createAsyncThunk(
+    'get/product',
     async (arg, {rejectWithValue}) => {
         try {
-            const response = await axios(`http://localhost:8080/clothes?${arg?.category ? `category=${arg?.category}`: ''}`)
+            const response = await axios(`http://localhost:8080/clothes/${arg.id}`)
 
             if(response.status === 200) {
                 return response.data
             }else {
-                throw new Error('Ошибка при получение данных')
+                throw new Error('Ошибка при получение продукта')
             }
 
 
@@ -22,25 +22,25 @@ export const getCollection = createAsyncThunk(
 )
 
 
-const clothesSlice = createSlice({
-    name: 'clothes',
+const productSlice = createSlice({
+    name: 'product',
     initialState: {
-        data: [],
+        data: {},
         status: 'idle',
         error: null
     },
     reducers: {},
     extraReducers: (builder) => {
-        builder.addCase(getCollection.fulfilled, (state, action) => {
+        builder.addCase(getOneProduct.fulfilled, (state, action) => {
             state.data = action.payload
             state.status = 'success'
             state.error = null
         })
-        builder.addCase(getCollection.pending, (state) => {
+        builder.addCase(getOneProduct.pending, (state) => {
             state.status = 'loading...'
             state.error = null
         })
-        builder.addCase(getCollection.rejected, (state, action) => {
+        builder.addCase(getOneProduct.rejected, (state, action) => {
             state.status = 'error'
             state.error = action.payload
         })
@@ -48,4 +48,4 @@ const clothesSlice = createSlice({
 })
 
 
-export default clothesSlice.reducer
+export default productSlice.reducer

@@ -1,7 +1,7 @@
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import React, {useCallback, useRef, useState} from "react";
+import React, {useCallback, useEffect, useRef, useState} from "react";
 import {FreeMode, Navigation, Thumbs} from 'swiper/modules';
 import collectionMen from "../../assets/images/collection-three.png"
 import collectionMenOne from "../../assets/images/collection-one.png"
@@ -19,9 +19,22 @@ import BrunoMan2 from "../../assets/images/BrunoMan2.png"
 import BrunoMan3 from "../../assets/images/BrunoMan3.png"
 import BrunoMan4 from "../../assets/images/BrunoMan4.png"
 import BrunoMan5 from "../../assets/images/BrunoMan5.png"
+import {useDispatch, useSelector} from "react-redux";
+import {getOneProduct} from "../../store/reducers/oneProduct/oneProduct";
+import {useParams} from "react-router-dom";
 
 
 export function PageOfProduct () {
+
+
+    const dispatch = useDispatch()
+    const {data} = useSelector((state) => state.product )
+
+    const params = useParams()
+
+    useEffect(() => {
+        dispatch(getOneProduct({id: params.slug}))
+    }, []);
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const sliderWithBuyingRef = useRef(null)
@@ -37,6 +50,8 @@ export function PageOfProduct () {
         if (!ref.current) return;
         ref.current.swiper.slideNext();
     }, []);
+
+
 
 
     return (
@@ -460,7 +475,6 @@ export function PageOfProduct () {
             </section>
             <div className=" mt-12 border-b-2"></div>
         </div>
-
 
     )
 }

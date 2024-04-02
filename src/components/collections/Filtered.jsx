@@ -1,14 +1,18 @@
 import {Select} from '@chakra-ui/react'
-import {ReactComponent as Selected} from "../../assets/vectors/selected.svg";
+import {useDispatch} from "react-redux";
+import {getCollection} from "../../store/reducers/clothes/clothes";
 
 export function Filtered() {
+
+    const dispatch = useDispatch()
+
     return (
         <div className="">
             <h2 className="collection-title">КОЛЛЕКЦИЯ</h2>
             <div className="filtered-option">
                 <Select
                     background="rgba(255,255,255)"
-                    borderRadius="none"
+                    borderRadius="15px"
                     width="320px"
                     height="60px"
                     placeholder='Пол'>
@@ -16,13 +20,16 @@ export function Filtered() {
                     <option style={{fontWeight:"600"}}  value='option2'>Женский</option>
                 </Select>
                 <Select
-                    borderRadius="none"
+                    onChange={(event) => dispatch(getCollection({category: event.target.value})) }
+                    borderRadius="15px"
                     width="320px"
                     height="60px"
-                    placeholder='Бренд'>
-                    <option style={{fontWeight:"600"}}  value='option1'>JACOB COHEN</option>
-                    <option style={{fontWeight:"600"}}  value='option2'>SANTONI</option>
-                    <option style={{fontWeight:"600"}}  value='option3'>VALENTINO</option>
+                    placeholder='Категория'>
+                    <option  style={{fontWeight:"600"}}  value=''>All</option>
+                    <option style={{fontWeight:"600"}}  value='hoody'>Худи</option>
+                    <option style={{fontWeight:"600"}}  value='sportsuit'>Спортивный костюм </option>
+                    <option style={{fontWeight:"600"}}  value='sweatshirt'>Фуфайка</option>
+                    <option style={{fontWeight:"600"}}  value='tshort'>Футболка</option>
                 </Select>
             </div>
             <div className="filtered-sort">
