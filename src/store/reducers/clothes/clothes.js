@@ -37,7 +37,7 @@ const clothesSlice = createSlice({
             state.error = null
         })
         builder.addCase(getCollection.pending, (state) => {
-            state.status = 'loading...'
+            state.status = 'loading'
             state.error = null
         })
         builder.addCase(getCollection.rejected, (state, action) => {

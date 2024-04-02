@@ -77,7 +77,7 @@ export function Items() {
 
             </div>
             <div className=" text-base font-semibold uppercase text-center border-solid border-b border-gray w-fit mx-auto mt-28 ">
-                <Link  to={'#'}>СМОТРЕТЬ ВСЁ</Link>
+                <Link  to={'/collection/slug'}>СМОТРЕТЬ ВСЁ</Link>
             </div>
 
         </section>

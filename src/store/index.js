@@ -5,7 +5,7 @@ import {rememberReducer, rememberEnhancer} from 'redux-remember';
 
 const reducers = {
     clothes:clothesSlice,
-    product:productSlice
+    product:productSlice,
  };
 
 const rememberedKeys = ['clothesSlice','productSlice'];

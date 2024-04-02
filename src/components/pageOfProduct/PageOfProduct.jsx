@@ -24,11 +24,11 @@ import {getOneProduct} from "../../store/reducers/oneProduct/oneProduct";
 import {useParams} from "react-router-dom";
 
 
-export function PageOfProduct () {
+export function PageOfProduct() {
 
 
     const dispatch = useDispatch()
-    const {data} = useSelector((state) => state.product )
+    const {data, status, error} = useSelector((state) => state.product)
 
     const params = useParams()
 
@@ -50,7 +50,6 @@ export function PageOfProduct () {
         if (!ref.current) return;
         ref.current.swiper.slideNext();
     }, []);
-
 
 
 
@@ -88,7 +87,7 @@ export function PageOfProduct () {
                             <img style={{width: '620px', height: "816px"}} src={collectionMenOne}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={<Bruno></Bruno>}/>
+                            <img src={<Bruno/>}/>
                         </SwiperSlide>
                         <SwiperSlide>
                             <img style={{width: '620px', height: "816px"}} src={collectionMen}/>
@@ -122,11 +121,11 @@ export function PageOfProduct () {
                 </div>
 
                 <div className="details-about">
-                    <h2 className="details-title mb-1">Замшевая куртка-бомбер на овчине Brunello Cucinelli</h2>
+                    <h2 className="details-title mb-1">{data.title}</h2>
                     <p className="details-articule mb-5 ">Артикул: MTS806699/.C1091-1-1</p>
                     <div className="flex">
-                        <span className="details-price mr-5" style={{fontSize: '20px'}}>123 000 ₽</span> <span
-                        style={{color: 'red', fontWeight: '700', fontSize: '20px'}}>96 000 ₽</span>
+                        <span className="details-price mr-5" style={{fontSize: '20px'}}>{data.price} $</span>
+                        <span style={{color: 'red', fontWeight: '700', fontSize: '20px'}}>{data.priceSale} $</span>
                     </div>
                     <div className="details-buttons mb-7">
                         <button
@@ -148,9 +147,11 @@ export function PageOfProduct () {
                         обеспечивает должную защиту для <br/> холодного сезона.
                         <br/>
                         <br/> <span style={{fontWeight: "700"}}>Данная модель большемерит на размер.</span></p>
-                    <p className="details-text mb-5"><span style={{fontWeight: "700"}}>Материал:</span> 100% Дубленая
+                    <p className="details-text mb-5"><span style={{fontWeight: "700"}}>Материал:</span> 100%
+                        Дубленая
                         Кожа</p>
-                    <p className="details-text mb-5"><span style={{fontWeight: "700"}}>Подкладка:</span> 100% Овчина</p>
+                    <p className="details-text mb-5"><span style={{fontWeight: "700"}}>Подкладка:</span> 100% Овчина
+                    </p>
                     <p className="details-text "><span style={{fontWeight: "700"}}>Производитель:</span> Италия</p>
                     <div className="border-b-2 mb-5"></div>
                     <div className="flex mb-7">
@@ -211,7 +212,7 @@ export function PageOfProduct () {
                                     <p className="swiper-text">BRUNELLO CUCINELLI</p>
                                     <p className="text-center mt-2">
                                         <span
-                                            style={{ fontWeight: '700'}}> 96 000 ₽</span></p>
+                                            style={{fontWeight: '700'}}> 96 000 ₽</span></p>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -229,7 +230,7 @@ export function PageOfProduct () {
                                     <p className="swiper-text">Saint Laurent</p>
                                     <p className="text-center mt-2">
                                         <span
-                                            style={{ fontWeight: '700'}}> 96 000 ₽</span></p>
+                                            style={{fontWeight: '700'}}> 96 000 ₽</span></p>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -453,7 +454,7 @@ export function PageOfProduct () {
                         </Swiper>
                         <div className="absolute top-1/2 z-10 w-full">
                             <button
-                                onClick={() => handlePrev(sliderLookedRef) }
+                                onClick={() => handlePrev(sliderLookedRef)}
                                 className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
                                 <FaChevronLeft
                                     size="34"
@@ -475,6 +476,7 @@ export function PageOfProduct () {
             </section>
             <div className=" mt-12 border-b-2"></div>
         </div>
-
     )
+
+
 }

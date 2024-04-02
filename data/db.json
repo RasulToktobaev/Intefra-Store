@@ -6,7 +6,7 @@
       "title": "Hoody Chess",
       "price": 415,
       "priceSale": 200,
-      "gender" : "man",
+      "gender" : "woman",
       "image": {
         "black": "Shop/hoody1.jpg",
         "red": "Shop/hoody1-red.jpg",
@@ -32,11 +32,12 @@
     },
     {
       "id": 2,
-      "title": "Hoody Harley Queen",
-      "price": 400,
-      "priceSale": 300,
+      "title": "Hoody OverSize",
+      "price": 600,
+      "priceSale": 200,
+      "gender": "man",
       "image": {
-        "black": "Shop/hoody2.jpg",
+        "black": "Shop/hoodyMenOne.jpg",
         "white": "Shop/hoody2-white.jpg"
       },
       "category": "hoody",
@@ -56,6 +57,7 @@
       "title": "Hoody Anime",
       "price": 519,
       "priceSale": 400,
+      "gender": "woman",
       "image": {
         "black": "Shop/hoody3.jpg",
         "white": "Shop/hoody3-white.jpg",
@@ -79,6 +81,7 @@
       "id": 4,
       "title": "Hoody Wendy",
       "price": 75,
+      "gender": "woman",
       "image": {
         "black": "Shop/hoody4.jpg",
         "white": "Shop/hoody4-white.jpg",
@@ -104,8 +107,9 @@
       "id": 5,
       "title": "Hoody Rick and Morty",
       "price": 339,
+      "gender": "man",
       "image": {
-        "black": "Shop/hoody5.jpg",
+        "black": "Shop/hoodyMenTwo.jpg",
         "white": "Shop/hoody5-white.jpg",
         "grey": "Shop/hoody5-grey.jpg"
       },
@@ -127,6 +131,7 @@
       "id": 6,
       "title": "Sport Suit STAMINA1",
       "price": 279,
+      "gender": "woman",
       "image": {
         "black": "Shop/sportsuit1-black.jpg",
         "white": "Shop/sportsuit1-white.jpg",
@@ -157,8 +162,9 @@
       "id": 7,
       "title": "Sport Suit STAMINA2",
       "price": 279,
+      "gender": "man",
       "image": {
-        "black": "Shop/sportsuit2.jpg",
+        "black": "Shop/sportsutiMenOne.jpeg",
         "white": "Shop/sportsuit2-white.jpg",
         "red": "Shop/sportsuit2-red.jpg",
         "pink": "Shop/sportsuit2-pink.jpg",
@@ -188,8 +194,9 @@
       "id": 8,
       "title": "Sport Suit Milk",
       "price": 229,
+      "gender": "man",
       "image": {
-        "black": "Shop/sportsuit3-blue.jpg",
+        "black": "Shop/sportsuitMenTwo.jpg",
         "white": "Shop/sportsuit3.jpg",
         "red": "Shop/sportsuit3-red.jpg",
         "pink": "Shop/sportsuit3-pink.jpg",
@@ -216,6 +223,7 @@
       "id": 9,
       "title": "Sport Suit WarmHeart",
       "price": 259,
+      "gender": "woman",
       "image": {
         "black": "Shop/sportsuit4.jpg",
         "blue": "Shop/sportsuit4-blue.jpg",
@@ -248,8 +256,9 @@
       "title": "Sport Suit Flow",
       "price": 290,
       "priceSale": 150,
+      "gender": "man",
       "image": {
-        "black": "Shop/sportsuit5-black.jpg",
+        "black": "Shop/sportsuitMenThree.jpg",
         "blue": "Shop/sportsuit5-blue.jpg",
         "white": "Shop/sportsuit5-white.jpg",
         "red": "Shop/sportsuit5-red.jpg",
@@ -278,6 +287,7 @@
       "id": 11,
       "title": "Sweatshirt Jinx LOL",
       "price": 300,
+      "gender": "woman",
       "image": {
         "black": "Shop/sweatshirt5.jpg",
         "white": "Shop/sweatshirt5-white.jpg",
@@ -303,8 +313,9 @@
       "id": 12,
       "title": "Sweatshirt Dragon",
       "price": 200,
+      "gender": "man",
       "image": {
-        "black": "Shop/sweatshirt4-black.jpg",
+        "black": "Shop/sweatshirtMenOne.jpg",
         "white": "Shop/sweatshirt4-white.jpg",
         "red": "Shop/sweatshirt4-red.jpg",
         "grey": "Shop/sweatshirt4-grey.jpg"
@@ -327,6 +338,7 @@
       "id": 13,
       "title": "Sweatshirt Rabbit",
       "price": 230,
+      "gender": "woman",
       "image": {
         "pink": "Shop/sweatshirt3-pink.jpg",
         "white": "Shop/sweatshirt3-white.jpg",
@@ -362,6 +374,7 @@
       "id": 14,
       "title": "Sweatshirt Cat",
       "price": 250,
+      "gender": "man",
       "image": {
         "pink": "Shop/sweatshirt2.jpg",
         "white": "Shop/sweatshirt2-white.jpg",
@@ -371,7 +384,7 @@
         "beige": "Shop/sweatshirt2-beige.jpg",
         "grey": "Shop/sweatshirt2-grey.jpg",
         "aqua": "Shop/sweatshirt2-aqua.jpg",
-        "black": "Shop/sweatshirt2-black.jpg"
+        "black": "Shop/sweatshirtMenTwo.jpg"
       },
       "category": "sweatshirt",
       "size": [
@@ -396,6 +409,7 @@
       "id": 15,
       "title": "Sweatshirt Euphoria",
       "price": 200,
+      "gender": "woman",
       "image": {
         "black": "Shop/sweatshirt1.jpg",
         "white": "Shop/sweatshirt1-white.jpg",
@@ -421,8 +435,9 @@
       "id": 16,
       "title": "Футболка Монализа",
       "price": 540,
+      "gender": "man",
       "image": {
-        "black": "Shop/tshort1.jpg",
+        "black": "Shop/tsshortMenTwo.jpg",
         "beige": "Shop/tshort1-beige.jpg",
         "blue": "Shop/tshort1-blue.jpg",
         "brown": "Shop/tshort1-brown.jpg",
@@ -455,6 +470,7 @@
       "id": 17,
       "title": "Футболка девочка",
       "price": 520,
+      "gender": "woman",
       "image": {
         "beige": "Shop/tshort2-beige.jpg",
         "brown": "Shop/tshort2-brown.jpg",
@@ -485,6 +501,7 @@
       "id": 18,
       "title": "Футболка Japan",
       "price": 350,
+      "gender": "woman",
       "image": {
         "black": "Shop/tshort3-black.jpg",
         "beige": "Shop/tshort3-beige.jpg",
@@ -520,6 +537,7 @@
       "id": 19,
       "title": "Футболка Бегемотик",
       "price": 490,
+      "gender": "woman",
       "image": {
         "beige": "Shop/tshort4-beige.jpg",
         "black": "Shop/tshort4-blue.jpg",
@@ -549,6 +567,7 @@
       "id": 20,
       "title": "Футболка Киллуа",
       "price": 500,
+      "gender": "woman",
       "image": {
         "black": "Shop/tshort5.jpg",
         "beige": "Shop/tshort5-beige.jpg",
@@ -578,6 +597,133 @@
         "grey"
       ],
       "inStock": 14
+    },
+    {
+      "id": 21,
+      "title": "Футболка Adidas",
+      "price": 500,
+      "gender": "man",
+      "image": {
+        "black": "Shop/tshortMen.jpg",
+        "beige": "Shop/tshort5-beige.jpg",
+        "blue": "Shop/tshort5-blue.jpg",
+        "brown": "Shop/tshort5-brown.jpg",
+        "grey": "Shop/tshort5-grey.jpg",
+        "orange": "Shop/tshort5-orange.jpg",
+        "pink": "Shop/tshort5-pink.jpg",
+        "red": "Shop/tshort5-red.jpg",
+        "white": "Shop/tshort5.jpg"
+      },
+      "category": "tshort",
+      "size": [
+        "s",
+        "m",
+        "xl"
+      ],
+      "colors": [
+        "pink",
+        "black",
+        "brown",
+        "beige",
+        "red",
+        "orange",
+        "white",
+        "blue",
+        "grey"
+      ],
+      "inStock": 14
+    },
+    {
+      "id": 22,
+      "title": "Футболка Nasa",
+      "price": 680,
+      "priceSale": 270,
+      "gender": "man",
+      "image": {
+        "black": "Shop/tshortMenThree.jpg",
+        "beige": "Shop/tshort5-beige.jpg",
+        "blue": "Shop/tshort5-blue.jpg",
+        "brown": "Shop/tshort5-brown.jpg",
+        "grey": "Shop/tshort5-grey.jpg",
+        "orange": "Shop/tshort5-orange.jpg",
+        "pink": "Shop/tshort5-pink.jpg",
+        "red": "Shop/tshort5-red.jpg",
+        "white": "Shop/tshort5.jpg"
+      },
+      "category": "tshort",
+      "size": [
+        "s",
+        "m",
+        "xl"
+      ],
+      "colors": [
+        "pink",
+        "black",
+        "brown",
+        "beige",
+        "red",
+        "orange",
+        "white",
+        "blue",
+        "grey"
+      ],
+      "inStock": 14
+    },
+    {
+      "id": 23,
+      "title": "Hoody Jeff Killer",
+      "price": 339,
+      "gender": "man",
+      "image": {
+        "black": "Shop/hoodyMenThree.jpeg",
+        "white": "Shop/hoody5-white.jpg",
+        "grey": "Shop/hoody5-grey.jpg"
+      },
+      "category": "hoody",
+      "size": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "white",
+        "black",
+        "grey"
+      ],
+      "inStock": 10
+    },
+    {
+      "id": 24,
+      "title": "Sport Suit Nike",
+      "price": 259,
+      "gender": "woman",
+      "image": {
+        "black": "Shop/sportsuitWoman.jpg",
+        "blue": "Shop/sportsuit4-blue.jpg",
+        "white": "Shop/sportsuit4-white.jpg",
+        "red": "Shop/sportsuit4-red.jpg",
+        "pink": "Shop/sportsuit4-pink.jpg",
+        "grey": "Shop/sportsuit4-grey.jpg",
+        "beige": "Shop/sportsuit4-beige.jpg"
+      },
+      "category": "sportsuit",
+      "size": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "beige",
+        "black",
+        "white",
+        "red",
+        "pink",
+        "grey",
+        "blue"
+      ],
+      "inStock": 31
     }
   ],
   "tickets": [

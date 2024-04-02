@@ -16,8 +16,8 @@ export function Filtered() {
                     width="320px"
                     height="60px"
                     placeholder='Пол'>
-                    <option style={{fontWeight:"600"}} value='option1'>Мужской</option>
-                    <option style={{fontWeight:"600"}}  value='option2'>Женский</option>
+                    <option style={{fontWeight:"600"}} value='man'>Мужской</option>
+                    <option style={{fontWeight:"600"}}  value='woman'>Женский</option>
                 </Select>
                 <Select
                     onChange={(event) => dispatch(getCollection({category: event.target.value})) }
@@ -25,10 +25,10 @@ export function Filtered() {
                     width="320px"
                     height="60px"
                     placeholder='Категория'>
-                    <option  style={{fontWeight:"600"}}  value=''>All</option>
+                    <option  style={{fontWeight:"600"}}  value=''>ВСЕ</option>
                     <option style={{fontWeight:"600"}}  value='hoody'>Худи</option>
                     <option style={{fontWeight:"600"}}  value='sportsuit'>Спортивный костюм </option>
-                    <option style={{fontWeight:"600"}}  value='sweatshirt'>Фуфайка</option>
+                    <option style={{fontWeight:"600"}}  value='sweatshirt'>Свитшот</option>
                     <option style={{fontWeight:"600"}}  value='tshort'>Футболка</option>
                 </Select>
             </div>

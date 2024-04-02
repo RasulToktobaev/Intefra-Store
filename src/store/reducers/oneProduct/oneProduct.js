@@ -37,7 +37,7 @@ const productSlice = createSlice({
             state.error = null
         })
         builder.addCase(getOneProduct.pending, (state) => {
-            state.status = 'loading...'
+            state.status = 'loading'
             state.error = null
         })
         builder.addCase(getOneProduct.rejected, (state, action) => {

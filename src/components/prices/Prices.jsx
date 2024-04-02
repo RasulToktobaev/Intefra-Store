@@ -135,7 +135,7 @@ export function Prices() {
                 </div>
             </div>
             <div className="mt-40 text-base font-semibold uppercase text-center border-solid border-b border-gray w-fit mx-auto">
-                <Link to={'#'}>СМОТРЕТЬ ВСЁ</Link>
+                <Link to={'/product/:slug'}>СМОТРЕТЬ ВСЁ</Link>
             </div>
 
         </section>
