@@ -61,8 +61,8 @@
       "gender": "woman",
       "image": {
         "black": "/Shop/hoody3.jpg",
-        "white": "Shop/hoody3-white.jpg",
-        "grey": "Shop/hoody3-grey.jpg"
+        "white": "/Shop/hoody3-white.jpg",
+        "grey": "/Shop/hoody3-grey.jpg"
       },
       "category": "hoody",
       "size": [
@@ -85,9 +85,9 @@
       "gender": "woman",
       "image": {
         "black": "/Shop/hoody4.jpg",
-        "white": "Shop/hoody4-white.jpg",
-        "red": "Shop/hoody4-red.jpg",
-        "grey": "Shop/hoody4-grey.jpg"
+        "white": "/Shop/hoody4-white.jpg",
+        "red": "/Shop/hoody4-red.jpg",
+        "grey": "/Shop/hoody4-grey.jpg"
       },
       "category": "hoody",
       "size": [
@@ -135,10 +135,10 @@
       "gender": "woman",
       "image": {
         "black": "/Shop/sportsuit1-black.jpg",
-        "white": "Shop/sportsuit1-white.jpg",
+        "white": "/Shop/sportsuit1-white.jpg",
         "red": "Shop/sportsuit1-red.jpg",
         "pink": "Shop/sportsuit1-pink.jpg",
-        "grey": "Shop/sportsuit1-grey.jpg",
+        "grey": "/Shop/sportsuit1-grey.jpg",
         "beige": "Shop/sportsuit1-beige.jpg",
         "blue": "Shop/sportsuit1.jpg"
       },
@@ -166,10 +166,10 @@
       "gender": "man",
       "image": {
         "black": "/Shop/sportsutiMenOne.jpeg",
-        "white": "Shop/sportsuit2-white.jpg",
+        "white": "/Shop/sportsuit2-white.jpeg",
         "red": "Shop/sportsuit2-red.jpg",
         "pink": "Shop/sportsuit2-pink.jpg",
-        "grey": "Shop/sportsuit2-grey.jpg",
+        "grey": "/Shop/sportsuit2-grey.jpg",
         "beige": "Shop/sportsuit2-almond.jpg",
         "blue": "Shop/sportsuit2-blue.jpg"
       },
@@ -198,10 +198,10 @@
       "gender": "man",
       "image": {
         "black": "/Shop/sportsuitMenTwo.jpg",
-        "white": "Shop/sportsuit3.jpg",
+        "white": "/Shop/sportsuit3.jpg",
         "red": "Shop/sportsuit3-red.jpg",
         "pink": "Shop/sportsuit3-pink.jpg",
-        "grey": "Shop/sportsuit3-grey.jpg",
+        "grey": "/Shop/sportsuit3-grey.jpg",
         "beige": "Shop/sportsuit3-beige.jpg"
       },
       "category": "sportsuit",
@@ -228,10 +228,10 @@
       "image": {
         "black": "/Shop/sportsuit4.jpg",
         "blue": "Shop/sportsuit4-blue.jpg",
-        "white": "Shop/sportsuit4-white.jpg",
+        "white": "/Shop/sportsuit1-white.jpg",
         "red": "Shop/sportsuit4-red.jpg",
         "pink": "Shop/sportsuit4-pink.jpg",
-        "grey": "Shop/sportsuit4-grey.jpg",
+        "grey": "/Shop/sportsuit1-grey.jpg",
         "beige": "Shop/sportsuit4-beige.jpg"
       },
       "category": "sportsuit",

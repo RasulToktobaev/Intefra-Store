@@ -103,19 +103,19 @@ export function PageOfProduct() {
                         className="mt-5"
                     >
                         <SwiperSlide>
-                            <img style={{width: '98px', height: "131px"}} src={data.image?.black}/>
+                            <img style={{width: '98px', height: "131px", objectFit:'cover'}} src={data.image?.black}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width: '98px', height: "131px"}} src={data.image?.white}/>
+                            <img style={{width: '98px', height: "131px", objectFit:'cover'}} src={data.image?.white}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width: '98px', height: "131px"}} src={data.image?.grey}/>
+                            <img style={{width: '98px', height: "131px", objectFit:'cover'}} src={data.image?.grey}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width: '98px', height: "131px"}} src={data.image?.white}/>
+                            <img style={{width: '98px', height: "131px", objectFit:'cover'}} src={data.image?.white}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width: '98px', height: "131px"}} src={data.image?.black}/>
+                            <img style={{width: '98px', height: "131px", objectFit:'cover'}} src={data.image?.black}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>
