@@ -8,9 +8,9 @@
       "priceSale": 200,
       "gender" : "woman",
       "image": {
-        "black": "Shop/hoody1.jpg",
-        "red": "Shop/hoody1-red.jpg",
-        "white": "Shop/hoody1-white.jpg",
+        "black": "/Shop/hoody1.jpg",
+        "grey": "/Shop/hoody1-grey.jpg",
+        "white": "/Shop/hoody1-white.jpg",
         "blue": "Shop/hoody1-blue.jpg"
       },
       "category": "hoody",
@@ -37,8 +37,9 @@
       "priceSale": 200,
       "gender": "man",
       "image": {
-        "black": "Shop/hoodyMenOne.jpg",
-        "white": "Shop/hoody2-white.jpg"
+        "white": "/Shop/hoodyMenOne.jpg",
+        "black": "/Shop/hoodyMenOne-white.jpg",
+        "grey": "/Shop/hoodyMenOne-white.jpg"
       },
       "category": "hoody",
       "size": [
@@ -59,7 +60,7 @@
       "priceSale": 400,
       "gender": "woman",
       "image": {
-        "black": "Shop/hoody3.jpg",
+        "black": "/Shop/hoody3.jpg",
         "white": "Shop/hoody3-white.jpg",
         "grey": "Shop/hoody3-grey.jpg"
       },
@@ -83,7 +84,7 @@
       "price": 75,
       "gender": "woman",
       "image": {
-        "black": "Shop/hoody4.jpg",
+        "black": "/Shop/hoody4.jpg",
         "white": "Shop/hoody4-white.jpg",
         "red": "Shop/hoody4-red.jpg",
         "grey": "Shop/hoody4-grey.jpg"
@@ -109,9 +110,9 @@
       "price": 339,
       "gender": "man",
       "image": {
-        "black": "Shop/hoodyMenTwo.jpg",
-        "white": "Shop/hoody5-white.jpg",
-        "grey": "Shop/hoody5-grey.jpg"
+        "black": "/Shop/hoodyMenTwo.jpg",
+        "white": "/Shop/hoodyMenTwo-white.jpg",
+        "grey": "/Shop/hoodyMenThree-grey.jpg"
       },
       "category": "hoody",
       "size": [
@@ -133,7 +134,7 @@
       "price": 279,
       "gender": "woman",
       "image": {
-        "black": "Shop/sportsuit1-black.jpg",
+        "black": "/Shop/sportsuit1-black.jpg",
         "white": "Shop/sportsuit1-white.jpg",
         "red": "Shop/sportsuit1-red.jpg",
         "pink": "Shop/sportsuit1-pink.jpg",
@@ -164,7 +165,7 @@
       "price": 279,
       "gender": "man",
       "image": {
-        "black": "Shop/sportsutiMenOne.jpeg",
+        "black": "/Shop/sportsutiMenOne.jpeg",
         "white": "Shop/sportsuit2-white.jpg",
         "red": "Shop/sportsuit2-red.jpg",
         "pink": "Shop/sportsuit2-pink.jpg",
@@ -196,7 +197,7 @@
       "price": 229,
       "gender": "man",
       "image": {
-        "black": "Shop/sportsuitMenTwo.jpg",
+        "black": "/Shop/sportsuitMenTwo.jpg",
         "white": "Shop/sportsuit3.jpg",
         "red": "Shop/sportsuit3-red.jpg",
         "pink": "Shop/sportsuit3-pink.jpg",
@@ -225,7 +226,7 @@
       "price": 259,
       "gender": "woman",
       "image": {
-        "black": "Shop/sportsuit4.jpg",
+        "black": "/Shop/sportsuit4.jpg",
         "blue": "Shop/sportsuit4-blue.jpg",
         "white": "Shop/sportsuit4-white.jpg",
         "red": "Shop/sportsuit4-red.jpg",
@@ -258,7 +259,7 @@
       "priceSale": 150,
       "gender": "man",
       "image": {
-        "black": "Shop/sportsuitMenThree.jpg",
+        "black": "/Shop/sportsuitMenThree.jpg",
         "blue": "Shop/sportsuit5-blue.jpg",
         "white": "Shop/sportsuit5-white.jpg",
         "red": "Shop/sportsuit5-red.jpg",
@@ -289,7 +290,7 @@
       "price": 300,
       "gender": "woman",
       "image": {
-        "black": "Shop/sweatshirt5.jpg",
+        "black": "/Shop/sweatshirt5.jpg",
         "white": "Shop/sweatshirt5-white.jpg",
         "red": "Shop/sweatshirt5-red.jpg",
         "grey": "Shop/sweatshirt5-grey.jpg"
@@ -315,7 +316,7 @@
       "price": 200,
       "gender": "man",
       "image": {
-        "black": "Shop/sweatshirtMenOne.jpg",
+        "black": "/Shop/sweatshirtMenOne.jpg",
         "white": "Shop/sweatshirt4-white.jpg",
         "red": "Shop/sweatshirt4-red.jpg",
         "grey": "Shop/sweatshirt4-grey.jpg"
@@ -340,7 +341,7 @@
       "price": 230,
       "gender": "woman",
       "image": {
-        "pink": "Shop/sweatshirt3-pink.jpg",
+        "pink": "/Shop/sweatshirt3-pink.jpg",
         "white": "Shop/sweatshirt3-white.jpg",
         "blue": "Shop/sweatshirt3-blue.jpg",
         "red": "Shop/sweatshirt3-red.jpg",
@@ -376,7 +377,7 @@
       "price": 250,
       "gender": "man",
       "image": {
-        "pink": "Shop/sweatshirt2.jpg",
+        "pink": "/Shop/sweatshirt2.jpg",
         "white": "Shop/sweatshirt2-white.jpg",
         "blue": "Shop/sweatshirt2-blue.jpg",
         "red": "Shop/sweatshirt2-red.jpg",
@@ -411,7 +412,7 @@
       "price": 200,
       "gender": "woman",
       "image": {
-        "black": "Shop/sweatshirt1.jpg",
+        "black": "/Shop/sweatshirt1.jpg",
         "white": "Shop/sweatshirt1-white.jpg",
         "red": "Shop/sweatshirt1-red.jpg",
         "grey": "Shop/sweatshirt1-grey.jpg"
@@ -437,7 +438,7 @@
       "price": 540,
       "gender": "man",
       "image": {
-        "black": "Shop/tsshortMenTwo.jpg",
+        "black": "/Shop/tsshortMenTwo.jpg",
         "beige": "Shop/tshort1-beige.jpg",
         "blue": "Shop/tshort1-blue.jpg",
         "brown": "Shop/tshort1-brown.jpg",
@@ -472,7 +473,7 @@
       "price": 520,
       "gender": "woman",
       "image": {
-        "beige": "Shop/tshort2-beige.jpg",
+        "beige": "/Shop/tshort2-beige.jpg",
         "brown": "Shop/tshort2-brown.jpg",
         "black": "Shop/tshort2-grey.jpg",
         "pink": "Shop/tshort2-pink.jpg",
@@ -503,7 +504,7 @@
       "price": 350,
       "gender": "woman",
       "image": {
-        "black": "Shop/tshort3-black.jpg",
+        "black": "/Shop/tshort3-black.jpg",
         "beige": "Shop/tshort3-beige.jpg",
         "blue": "Shop/tshort3-blue.jpg",
         "brown": "Shop/tshort3-brown.jpg",
@@ -539,7 +540,7 @@
       "price": 490,
       "gender": "woman",
       "image": {
-        "beige": "Shop/tshort4-beige.jpg",
+        "beige": "/Shop/tshort4-beige.jpg",
         "black": "Shop/tshort4-blue.jpg",
         "brown": "Shop/tshort4.jpg",
         "grey": "Shop/tshort4-grey.jpg",
@@ -565,7 +566,7 @@
     },
     {
       "id": 20,
-      "title": "Футболка Киллуа",
+      "title": "/Футболка Киллуа",
       "price": 500,
       "gender": "woman",
       "image": {
@@ -604,7 +605,7 @@
       "price": 500,
       "gender": "man",
       "image": {
-        "black": "Shop/tshortMen.jpg",
+        "black": "/Shop/tshortMen.jpg",
         "beige": "Shop/tshort5-beige.jpg",
         "blue": "Shop/tshort5-blue.jpg",
         "brown": "Shop/tshort5-brown.jpg",
@@ -640,7 +641,7 @@
       "priceSale": 270,
       "gender": "man",
       "image": {
-        "black": "Shop/tshortMenThree.jpg",
+        "black": "/Shop/tshortMenThree.jpg",
         "beige": "Shop/tshort5-beige.jpg",
         "blue": "Shop/tshort5-blue.jpg",
         "brown": "Shop/tshort5-brown.jpg",
@@ -675,7 +676,7 @@
       "price": 339,
       "gender": "man",
       "image": {
-        "black": "Shop/hoodyMenThree.jpeg",
+        "black": "/Shop/hoodyMenThree.jpeg",
         "white": "Shop/hoody5-white.jpg",
         "grey": "Shop/hoody5-grey.jpg"
       },
@@ -699,7 +700,7 @@
       "price": 259,
       "gender": "woman",
       "image": {
-        "black": "Shop/sportsuitWoman.jpg",
+        "black": "/Shop/sportsuitWoman.jpg",
         "blue": "Shop/sportsuit4-blue.jpg",
         "white": "Shop/sportsuit4-white.jpg",
         "red": "Shop/sportsuit4-red.jpg",

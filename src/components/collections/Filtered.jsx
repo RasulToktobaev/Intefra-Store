@@ -1,16 +1,33 @@
 import {Select} from '@chakra-ui/react'
 import {useDispatch} from "react-redux";
 import {getCollection} from "../../store/reducers/clothes/clothes";
+import {useEffect, useState} from "react";
 
 export function Filtered() {
 
     const dispatch = useDispatch()
+
+    const [selectedGender, setSelectedGender] = useState('')
+    const [selectedCategory, setSelectedCategory ] = useState('')
+
+    useEffect(() => {
+        dispatch(getCollection({category:selectedCategory, gender: selectedGender}))
+    }, [selectedCategory, selectedGender]);
+
+    const onSelectCategory =  (event) => {
+        setSelectedCategory(event.target.value)
+    }
+
+    const onSelectGender = (event) => {
+        setSelectedGender(event.target.value)
+    }
 
     return (
         <div className="">
             <h2 className="collection-title">КОЛЛЕКЦИЯ</h2>
             <div className="filtered-option">
                 <Select
+                    onChange={onSelectGender}
                     background="rgba(255,255,255)"
                     borderRadius="15px"
                     width="320px"
@@ -20,7 +37,7 @@ export function Filtered() {
                     <option style={{fontWeight:"600"}}  value='woman'>Женский</option>
                 </Select>
                 <Select
-                    onChange={(event) => dispatch(getCollection({category: event.target.value})) }
+                    onChange={onSelectCategory}
                     borderRadius="15px"
                     width="320px"
                     height="60px"

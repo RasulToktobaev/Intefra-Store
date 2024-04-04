@@ -21,7 +21,8 @@ import BrunoMan4 from "../../assets/images/BrunoMan4.png"
 import BrunoMan5 from "../../assets/images/BrunoMan5.png"
 import {useDispatch, useSelector} from "react-redux";
 import {getOneProduct} from "../../store/reducers/oneProduct/oneProduct";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+import {RoutesUrls} from "../../constans/routesUrls";
 
 
 export function PageOfProduct() {
@@ -52,7 +53,6 @@ export function PageOfProduct() {
     }, []);
 
 
-
     return (
         <div className='border-gray border-solid border-t mt-10'>
             <div className="container details-content">
@@ -71,26 +71,26 @@ export function PageOfProduct() {
                     >
 
                         <SwiperSlide>
-                            <img src={Bruno}/>
+                            <img style={{width: '620px', height: '930px', objectFit: 'cover'}} src={data.image?.black}/>
                             <div
                                 className="absolute top-0 right-0 text-white font-semibold rounded-full px-8 py-14 text-4xl"
                                 style={{background: "red"}}>-70%
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width: '620px', height: "816px"}} src={collectionMen}/>
+                            <img style={{width: '620px', height: '930px', objectFit: 'cover'}} src={data.image?.grey}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width: '620px', height: "816px"}} src={collectionMenTwo}/>
+                            <img style={{width: '620px', height: '930px', objectFit: 'cover'}} src={data.image?.white}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width: '620px', height: "816px"}} src={collectionMenOne}/>
+                            <img style={{width: '620px', height: '930px', objectFit: 'cover'}} src={data.image?.grey}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={<Bruno/>}/>
+                            <img style={{width: '620px', height: '930px', objectFit: 'cover'}} src={data.image?.white}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img style={{width: '620px', height: "816px"}} src={collectionMen}/>
+                            <img style={{width: '620px', height: '930px', objectFit: 'cover'}} src={data.image?.grey}/>
                         </SwiperSlide>
                     </Swiper>
                     <Swiper
@@ -103,19 +103,19 @@ export function PageOfProduct() {
                         className="mt-5"
                     >
                         <SwiperSlide>
-                            <img src={BrunoMan1}/>
+                            <img style={{width: '98px', height: "131px"}} src={data.image?.black}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={BrunoMan2}/>
+                            <img style={{width: '98px', height: "131px"}} src={data.image?.white}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={BrunoMan3}/>
+                            <img style={{width: '98px', height: "131px"}} src={data.image?.grey}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={BrunoMan4}/>
+                            <img style={{width: '98px', height: "131px"}} src={data.image?.white}/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={BrunoMan5}/>
+                            <img style={{width: '98px', height: "131px"}} src={data.image?.black}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -123,17 +123,20 @@ export function PageOfProduct() {
                 <div className="details-about">
                     <h2 className="details-title mb-1">{data.title}</h2>
                     <p className="details-articule mb-5 ">Артикул: MTS806699/.C1091-1-1</p>
-                    <div className="flex">
-                        <span className="details-price mr-5" style={{fontSize: '20px'}}>{data.price} $</span>
-                        <span style={{color: 'red', fontWeight: '700', fontSize: '20px'}}>{data.priceSale} $</span>
+                    <div className="flex items-center">
+                        <span className="details-price mr-5" style={{fontSize: '20px'}}> Цена : {data.price} $</span>
+                        <span style={{
+                            color: 'red',
+                            fontWeight: '700',
+                            fontSize: '20px'
+                        }}> Цена со скидкой : {data.priceSale} $</span>
                     </div>
                     <div className="details-buttons mb-7">
-                        <button
-                            className="details-btn details-btn--active hover:bg-black hover:text-white transition-all rounded text-lg text-center mr-5">50
-                        </button>
-                        <button className="details-btn rounded text-lg mr-5">52</button>
-                        <button className="details-btn rounded text-lg mr-5">54</button>
-                        <button className="details-btn rounded text-lg mr-5">56</button>
+                        <p style={{marginRight: '15px',}}>РАЗМЕРЫ :</p>
+                        {data && data.size && data.size.map((el) => {
+                            return <button
+                                className="details-btn details-btn--active hover:bg-black hover:text-white transition-all  rounded text-lg mr-5">{el}</button>
+                        })}
                     </div>
                     <div className="mb-7">
                         <Button className="mr-5" colorScheme='blue' background="rgb(25, 4, 4);" width="187px"
@@ -141,18 +144,26 @@ export function PageOfProduct() {
                         <Button colorScheme='blue' background="rgb(25, 4, 4);" width="187px" height="47px"
                                 borderRadius="none">БЫСТРЫЙ ЗАКАЗ</Button>
                     </div>
-                    <div className="border-b-2"></div>
-                    <p className="details-text mb-5">Куртка-бомбер из замшевого ширлинга Texture, который имеет
-                        бархатистый и матовый вид с <br/> наружной стороны. Пушистая и теплая внутренняя сторона
-                        обеспечивает должную защиту для <br/> холодного сезона.
-                        <br/>
-                        <br/> <span style={{fontWeight: "700"}}>Данная модель большемерит на размер.</span></p>
+                    <div className="border-b-2 flex mb-5"><p style={{fontWeight: '700'}}> Категория : </p>
+                        <span>{data.category}</span>
+                    </div>
+
+                    {/*<p className="details-text mb-5">Куртка-бомбер из замшевого ширлинга Texture, который имеет*/}
+                    {/*    бархатистый и матовый вид с <br/> наружной стороны. Пушистая и теплая внутренняя сторона*/}
+                    {/*    обеспечивает должную защиту для <br/> холодного сезона.*/}
+                    {/*    <br/>*/}
+                    {/*    <br/> <span style={{fontWeight: "700"}}>Данная модель большемерит на размер.</span></p>*/}
                     <p className="details-text mb-5"><span style={{fontWeight: "700"}}>Материал:</span> 100%
                         Дубленая
                         Кожа</p>
                     <p className="details-text mb-5"><span style={{fontWeight: "700"}}>Подкладка:</span> 100% Овчина
                     </p>
                     <p className="details-text "><span style={{fontWeight: "700"}}>Производитель:</span> Италия</p>
+                    <div style={{marginTop: "20px", display:"flex" , marginBottom:'20px'}}>
+                        <p style={{fontWeight:'600'}}> Цвета :</p>
+                        <p> {data.colors}</p>
+                    </div>
+
                     <div className="border-b-2 mb-5"></div>
                     <div className="flex mb-7">
                         <div className=" border mr-5">
@@ -161,14 +172,14 @@ export function PageOfProduct() {
                         <div className="flex " style={{background: "whitesmoke"}}>
                             <img className="mr-5" src={ArtiganiBoutique} alt=""/>
                             <div className="mt-5">
-                                <p>Товар в наличии</p>
+                                <p style={{fontWeight: "600", color: 'green'}}>Товар в наличии: {data.inStock} штук</p>
                                 <a href="#" style={{color: 'red'}}>www.artigiani.boutique</a>
                                 <p>Санкт-Петербург, Большой проспект ПС 13 <span className="invisible">.</span></p>
                             </div>
                         </div>
                     </div>
                     <div className="flex">
-                        <a href="#" className="mr-7 underline">Смотреть все джинсы</a>
+                        <Link to={RoutesUrls.collection.path} className="mr-7 underline">Смотреть всю коллекцию</Link>
                         <a href="#" className="mr-7 underline">Смотреть все товары бренда</a>
                         <a href="#" className="mr-7 underline">Смотреть все товары для мужчин</a>
                     </div>

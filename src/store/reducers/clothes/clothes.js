@@ -4,15 +4,23 @@ import axios from "axios";
 export const getCollection = createAsyncThunk(
     'get/clothes',
     async (arg, {rejectWithValue}) => {
-        try {
-            const response = await axios(`http://localhost:8080/clothes?${arg?.category ? `category=${arg?.category}`: ''}`)
 
-            if(response.status === 200) {
+
+        try {
+            const genderParams = arg?.gender ? {gender: arg?.gender} : {}
+            const categoryParams = arg?.category ? {category: arg?.category} : {}
+            const response = await axios('http://localhost:8080/clothes', {
+                params: {
+                    ...genderParams,
+                    ...categoryParams,
+                }
+            })
+
+            if (response.status === 200) {
                 return response.data
-            }else {
+            } else {
                 throw new Error('Ошибка при получение данных')
             }
-
 
 
         } catch (err) {
