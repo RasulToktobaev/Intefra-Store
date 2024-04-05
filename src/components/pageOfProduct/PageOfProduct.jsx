@@ -23,6 +23,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {getOneProduct} from "../../store/reducers/oneProduct/oneProduct";
 import {Link, useParams} from "react-router-dom";
 import {RoutesUrls} from "../../constans/routesUrls";
+import {addCart} from "../../store/reducers/cart/cart";
 
 
 export function PageOfProduct() {
@@ -135,11 +136,11 @@ export function PageOfProduct() {
                         <p style={{marginRight: '15px',}}>РАЗМЕРЫ :</p>
                         {data && data.size && data.size.map((el) => {
                             return <button
-                                className="details-btn details-btn--active hover:bg-black hover:text-white transition-all  rounded text-lg mr-5">{el}</button>
+                                className="details-btn details-btn--active hover:bg-black hover:text-white transition-all  rounded text-lg mr-5">{el.toUpperCase()}</button>
                         })}
                     </div>
                     <div className="mb-7">
-                        <Button className="mr-5" colorScheme='blue' background="rgb(25, 4, 4);" width="187px"
+                        <Button onClick={() => dispatch(addCart(data))} className="mr-5" colorScheme='blue' background="rgb(25, 4, 4);" width="187px"
                                 height="47px" borderRadius="none">В КОРЗИНУ</Button>
                         <Button colorScheme='blue' background="rgb(25, 4, 4);" width="187px" height="47px"
                                 borderRadius="none">БЫСТРЫЙ ЗАКАЗ</Button>
@@ -159,9 +160,13 @@ export function PageOfProduct() {
                     <p className="details-text mb-5"><span style={{fontWeight: "700"}}>Подкладка:</span> 100% Овчина
                     </p>
                     <p className="details-text "><span style={{fontWeight: "700"}}>Производитель:</span> Италия</p>
-                    <div style={{marginTop: "20px", display:"flex" , marginBottom:'20px'}}>
+                    <div className="flex my-4 items-center gap-2">
                         <p style={{fontWeight:'600'}}> Цвета :</p>
-                        <p> {data.colors}</p>
+                        <p>{
+                            data.colors.map((color) =>(
+                                 <span style={{background:color}} className={`px-4 py-1 text-white inline-block `}>{color}</span>
+                            ))
+                        }</p>
                     </div>
 
                     <div className="border-b-2 mb-5"></div>

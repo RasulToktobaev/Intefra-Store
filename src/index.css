@@ -616,6 +616,8 @@
 
 
 .details-btn{
+    display: grid;
+    place-items: center;
     box-sizing: border-box;
     border: 1px solid rgb(217, 217, 217);
     background: rgb(255, 255, 255);
