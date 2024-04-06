@@ -35,6 +35,8 @@ export function Brand() {
 
             </div>
 
+
+
             <div className="flex justify-center mt-64 relative">
                 <Link className="brand-text" to={'/catalog'}>ВСЕ БРЕНДЫ</Link>
                 <span className="brand__line"></span>

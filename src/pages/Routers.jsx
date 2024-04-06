@@ -19,7 +19,7 @@ const Routers = () => {
                 <Route path={RoutesUrls.collection.path} element={<Collections/>}/>
                 <Route path={`${RoutesUrls.collection.path}/:slug`} element={<CollectionDetail/>}/>
                 <Route path={`${RoutesUrls.product.path}/:slug`} element={<ProductDetail/>}/>
-                <Route path='/cart' element={<Cart/>}/>
+                <Route path={RoutesUrls.cart.path} element={<Cart/>}/>
                 <Route path='/payment' element={<h2>payment</h2>}/>
                 <Route path={RoutesUrls.shoes.path} element={<Shoes/>}/>
             </Route>

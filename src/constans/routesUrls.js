@@ -14,6 +14,10 @@ export const RoutesUrls = {
     product:{
         path:'/product',
         title:'ПОДРОБНО ПРОДУКТ'
+    },
+    cart:{
+        path:'/cart',
+        title:'Корзина'
     }
 }
 

@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -73,7 +72,7 @@
     margin-bottom: 75px;
 }
 
-.brand-content{
+.brand-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -203,10 +202,12 @@
     text-transform: uppercase;
     margin-bottom: 390px;
 
-    &:hover {
-        background: slategray;
-        transition: 0.5s;
-    }
+
+}
+
+.purfume-left-btn:hover {
+    background: slategray;
+    transition: 0.5s;
 }
 
 .purfume-left-text {
@@ -255,10 +256,12 @@
     text-transform: uppercase;
     margin-bottom: 390px;
 
-    &:hover {
-        background: orange;
-        transition: 0.5s;
-    }
+
+}
+
+.purfume-right-btn:hover {
+    background: orange;
+    transition: 0.5s;
 }
 
 .purfume-right-title {
@@ -286,7 +289,7 @@
 }
 
 .product__content {
-    background: url("../src/assets/images/product-bg.png") center  no-repeat;
+    background: url("../src/assets/images/product-bg.png") center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -499,9 +502,6 @@
 }
 
 
-
-
-
 .items-title {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
@@ -543,14 +543,14 @@
     justify-content: center;
 }
 
-.filtered-sort{
+.filtered-sort {
     display: flex;
     margin-top: 44px;
     gap: 20px;
     justify-content: center;
 }
 
-.filtered-sort-text{
+.filtered-sort-text {
     color: rgb(150, 150, 150);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -560,7 +560,7 @@
 
 }
 
-.filtered-sort-description{
+.filtered-sort-description {
     color: rgb(0, 0, 0);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -572,20 +572,19 @@
 
 /*new pages CollectionDetails*/
 
-.details-content{
+.details-content {
     margin-top: 50px;
     display: flex;
     gap: 73px;
 }
 
-.details-about{
+.details-about {
     display: flex;
     flex-direction: column;
 }
 
 
-
-.details-title{
+.details-title {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 40px;
@@ -594,28 +593,27 @@
     text-align: left;
 }
 
-.details-list{
+.details-list {
     display: flex;
     gap: 15px;
 }
 
 
-.details-text{
+.details-text {
     color: rgb(51, 51, 51);
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     text-align: left;
 }
 
-.details-buttons{
+.details-buttons {
     display: flex;
     margin-top: 21px;
     gap: 3px;
 }
 
 
-
-.details-btn{
+.details-btn {
     display: grid;
     place-items: center;
     box-sizing: border-box;
@@ -626,26 +624,25 @@
     height: 24px;
 }
 
-.details-btn--active{
+.details-btn--active {
     border: 1px solid rgb(0, 0, 0);
     color: black;
 }
 
-.details-img{
+.details-img {
     width: 74px;
     height: 104px;
 }
 
-.details-price{
+.details-price {
     color: rgb(150, 150, 150);
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 120%;
-    text-decoration-line: line-through;
 }
 
-.details-price-three{
+.details-price-three {
     color: rgb(150, 150, 150);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -655,7 +652,7 @@
     margin-right: 118px;
 }
 
-.card-image{
+.card-image {
     object-fit: cover;
     width: 420px;
     height: 534px;

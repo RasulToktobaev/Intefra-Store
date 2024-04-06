@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {getCollection} from "../../store/reducers/clothes/clothes";
 import {useNavigate} from "react-router-dom";
+import {animateScroll as scroll} from "react-scroll";
 
 export function Cards() {
     const {data} = useSelector((state) => state.clothes)
@@ -9,8 +10,13 @@ export function Cards() {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     useEffect(() => {
         dispatch(getCollection())
+        scrollToTop()
     }, []);
 
     return (

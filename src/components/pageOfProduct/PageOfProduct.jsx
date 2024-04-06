@@ -3,9 +3,6 @@ import 'swiper/css/thumbs';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import React, {useCallback, useEffect, useRef, useState} from "react";
 import {FreeMode, Navigation, Thumbs} from 'swiper/modules';
-import collectionMen from "../../assets/images/collection-three.png"
-import collectionMenOne from "../../assets/images/collection-one.png"
-import collectionMenTwo from "../../assets/images/collection-two.png"
 import {Button} from "@chakra-ui/react";
 import brandOne from '../../assets/images/brandOne.png'
 import ArtiganiBoutique from '../../assets/images/ArtiganiBoutiqe.png'
@@ -13,17 +10,13 @@ import item1 from "../../assets/images/newsItem1.png";
 import item2 from "../../assets/images/newsItem2.png";
 import item3 from "../../assets/images/newsItem3.png";
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa6";
-import Bruno from "../../assets/images/BrunoBuccarati.png"
-import BrunoMan1 from "../../assets/images/BrunoMan1.png"
-import BrunoMan2 from "../../assets/images/BrunoMan2.png"
-import BrunoMan3 from "../../assets/images/BrunoMan3.png"
-import BrunoMan4 from "../../assets/images/BrunoMan4.png"
-import BrunoMan5 from "../../assets/images/BrunoMan5.png"
 import {useDispatch, useSelector} from "react-redux";
 import {getOneProduct} from "../../store/reducers/oneProduct/oneProduct";
 import {Link, useParams} from "react-router-dom";
 import {RoutesUrls} from "../../constans/routesUrls";
 import {addCart} from "../../store/reducers/cart/cart";
+import {toast} from "react-toastify";
+import {animateScroll as scroll, scrollSpy} from 'react-scroll'
 
 
 export function PageOfProduct() {
@@ -33,9 +26,13 @@ export function PageOfProduct() {
     const {data, status, error} = useSelector((state) => state.product)
 
     const params = useParams()
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
 
     useEffect(() => {
         dispatch(getOneProduct({id: params.slug}))
+        scrollToTop()
     }, []);
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -125,12 +122,16 @@ export function PageOfProduct() {
                     <h2 className="details-title mb-1">{data.title}</h2>
                     <p className="details-articule mb-5 ">Артикул: MTS806699/.C1091-1-1</p>
                     <div className="flex items-center">
-                        <span className="details-price mr-5" style={{fontSize: '20px'}}> Цена : {data.price} $</span>
-                        <span style={{
-                            color: 'red',
-                            fontWeight: '700',
-                            fontSize: '20px'
-                        }}> Цена со скидкой : {data.priceSale} $</span>
+
+                        <span className="details-price mr-5" style={{fontSize: '20px', textDecoration: data?.priceSale ? 'line-through' : 'none'}}> Цена : {data.price} $</span>
+                        {
+                            data?.priceSale &&
+                            <span style={{
+                                color: 'red',
+                                fontWeight: '700',
+                                fontSize: '20px'
+                            }}> Цена со скидкой : {data.priceSale} $</span>
+                        }
                     </div>
                     <div className="details-buttons mb-7">
                         <p style={{marginRight: '15px',}}>РАЗМЕРЫ :</p>
@@ -140,7 +141,11 @@ export function PageOfProduct() {
                         })}
                     </div>
                     <div className="mb-7">
-                        <Button onClick={() => dispatch(addCart(data))} className="mr-5" colorScheme='blue' background="rgb(25, 4, 4);" width="187px"
+                        <Button onClick={() => {
+                            dispatch(addCart(data))
+                            toast('Добавлено в корзину ')
+                        }}
+                                className="mr-5" colorScheme='blue' background="rgb(25, 4, 4);" width="187px"
                                 height="47px" borderRadius="none">В КОРЗИНУ</Button>
                         <Button colorScheme='blue' background="rgb(25, 4, 4);" width="187px" height="47px"
                                 borderRadius="none">БЫСТРЫЙ ЗАКАЗ</Button>

@@ -7,7 +7,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import {Provider} from "react-redux";
 import store from "./store";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
                   <Routers/>
               </BrowserRouter>
           </Provider>
-
+          <ToastContainer
+          theme="dark"
+          />
       </ChakraProvider>
     );
 }
