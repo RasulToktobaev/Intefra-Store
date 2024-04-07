@@ -6,10 +6,6 @@ import {FreeMode, Navigation, Thumbs} from 'swiper/modules';
 import {Button} from "@chakra-ui/react";
 import brandOne from '../../assets/images/brandOne.png'
 import ArtiganiBoutique from '../../assets/images/ArtiganiBoutiqe.png'
-import item1 from "../../assets/images/newsItem1.png";
-import item2 from "../../assets/images/newsItem2.png";
-import item3 from "../../assets/images/newsItem3.png";
-import {FaChevronLeft, FaChevronRight} from "react-icons/fa6";
 import {useDispatch, useSelector} from "react-redux";
 import {getOneProduct} from "../../store/reducers/oneProduct/oneProduct";
 import {Link, useParams} from "react-router-dom";
@@ -17,6 +13,9 @@ import {RoutesUrls} from "../../constans/routesUrls";
 import {addCart} from "../../store/reducers/cart/cart";
 import {toast} from "react-toastify";
 import {animateScroll as scroll, scrollSpy} from 'react-scroll'
+import PageOfItems from "../pageOfItems/PageOfItems";
+import PageOfItemsTwo from "../pageOfItemsTwo/PageOfItemsTwo";
+import PageOfItemsThree from "../pageOfItemsThree/PageOfItemsThree";
 
 
 export function PageOfProduct() {
@@ -36,7 +35,6 @@ export function PageOfProduct() {
     }, []);
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
-    const sliderWithBuyingRef = useRef(null)
     const sliderSameRef = useRef(null)
     const sliderLookedRef = useRef(null)
 
@@ -137,7 +135,7 @@ export function PageOfProduct() {
                         <p style={{marginRight: '15px',}}>РАЗМЕРЫ :</p>
                         {data && data.size && data.size.map((el) => {
                             return <button
-                                className="details-btn details-btn--active hover:bg-black hover:text-white transition-all  rounded text-lg mr-5">{el.toUpperCase()}</button>
+                                className="details-btn details-btn--active hover:bg-black hover:text-white transition-all  rounded text-lg mr-5 ">{el.toUpperCase()}</button>
                         })}
                     </div>
                     <div className="mb-7">
@@ -169,7 +167,7 @@ export function PageOfProduct() {
                         <p style={{fontWeight:'600'}}> Цвета :</p>
                         <p>{
                             data.colors.map((color) =>(
-                                 <span style={{background:color}} className={`px-4 py-1 text-white inline-block `}>{color}</span>
+                                 <span style={{background:color}} className={`px-4 py-1 text-white  `}>{color}</span>
                             ))
                         }</p>
                     </div>
@@ -195,306 +193,12 @@ export function PageOfProduct() {
                     </div>
                 </div>
             </div>
-            <section className="items">
-                <div className="container">
-                    <h2 className="font-semibold text-center text-4xl my-10 " style={{
-                        fontSize: "55px",
-                        marginBottom: '10%',
-                        marginTop: '90px',
-                        fontWeight: "300"
-                    }}>С ЭТИМ ТОВАРОМ ПОКУПАЮТ</h2>
 
-                    <div className="relative">
-                        <Swiper
-                            modules={[Navigation]}
-                            ref={sliderWithBuyingRef}
-                            spaceBetween={35}
-                            slidesPerView={4}
-                            loop={true}
-                            onSlideChange={() => console.log('slide change')}
-                            onSwiper={(swiper) => console.log(swiper)}
-                        >
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item1} alt="Slide 1" className="swiper-image relative"/>
-                                    <div
-                                        className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                        style={{background: "red"}}>-70%
-                                    </div>
-                                    <p className="swiper-text">Saint Laurent</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item2} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2">
-                                        <span
-                                            style={{fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item3} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2">
-                                        <span
-                                            style={{fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item1} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">Saint Laurent</p>
-                                    <p className="text-center mt-2">
-                                        <span
-                                            style={{fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item2} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item3} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
-                        <div className="absolute top-1/2 z-10 w-full">
-                            <button
-                                onClick={() => handlePrev(sliderWithBuyingRef)}
-                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
-                                <FaChevronLeft
-                                    size="34"
-                                />
-                            </button>
-                            <button
-                                onClick={() => handleNext(sliderWithBuyingRef)}
-                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
-                                <FaChevronRight
-                                    size="34"
-                                />
-                            </button>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
+           <PageOfItems/>
             <div className=" mt-12 border-b-2"></div>
-            <section className="items">
-                <div className="container">
-                    <h2 className="font-semibold text-center text-4xl my-10 " style={{
-                        fontSize: "55px",
-                        marginBottom: '10%',
-                        marginTop: '90px',
-                        fontWeight: "300"
-                    }}>ПОХОЖИЕ ТОВАРЫ</h2>
-
-                    <div className="relative">
-                        <Swiper
-                            modules={[Navigation]}
-                            ref={sliderSameRef}
-                            spaceBetween={35}
-                            slidesPerView={4}
-                            loop={true}
-                            onSlideChange={() => console.log('slide change')}
-                            onSwiper={(swiper) => console.log(swiper)}
-                        >
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item1} alt="Slide 1" className="swiper-image relative"/>
-                                    <div
-                                        className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                        style={{background: "red"}}>-70%
-                                    </div>
-                                    <p className="swiper-text">Saint Laurent</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item2} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item3} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item1} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">Saint Laurent</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item2} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item3} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
-                        <div className="absolute top-1/2 z-10 w-full">
-                            <button
-                                onClick={() => handlePrev(sliderSameRef)}
-                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
-                                <FaChevronLeft
-                                    size="34"
-                                />
-                            </button>
-                            <button
-                                onClick={() => handleNext(sliderSameRef)}
-                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
-                                <FaChevronRight
-                                    size="34"
-                                />
-                            </button>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
+           <PageOfItemsTwo/>
             <div className=" mt-12 border-b-2"></div>
-            <section className="items">
-                <div className="container">
-                    <h2 className="font-semibold text-center text-4xl my-10 " style={{
-                        fontSize: "55px",
-                        marginBottom: '10%',
-                        marginTop: '90px',
-                        fontWeight: "300"
-                    }}>РАНЕЕ ВЫ СМОТРЕЛИ</h2>
-
-                    <div className="relative">
-                        <Swiper
-                            modules={[Navigation]}
-                            ref={sliderLookedRef}
-                            spaceBetween={35}
-                            slidesPerView={4}
-                            loop={true}
-                            onSlideChange={() => console.log('slide change')}
-                            onSwiper={(swiper) => console.log(swiper)}
-                        >
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item1} alt="Slide 1" className="swiper-image relative"/>
-                                    <div
-                                        className="absolute top-0 right-0 text-white font-semibold rounded-full px-4 py-4 text-2xl"
-                                        style={{background: "red"}}>-70%
-                                    </div>
-                                    <p className="swiper-text">Saint Laurent</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item2} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item3} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item1} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">Saint Laurent</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item2} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div>
-                                    <img src={item3} alt="Slide 1" className="swiper-image relative"/>
-                                    <p className="swiper-text">BRUNELLO CUCINELLI</p>
-                                    <p className="text-center mt-2"><span className="line-through">123 000 ₽</span>
-                                        <span
-                                            style={{color: 'red', fontWeight: '700'}}> 96 000 ₽</span></p>
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
-                        <div className="absolute top-1/2 z-10 w-full">
-                            <button
-                                onClick={() => handlePrev(sliderLookedRef)}
-                                className="border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  left-[-10px]">
-                                <FaChevronLeft
-                                    size="34"
-                                />
-                            </button>
-                            <button
-                                onClick={() => handleNext(sliderLookedRef)}
-                                className=" border-solid border border-gray stroke-gray w-[60px] h-[60px] grid place-items-center bg-transparent absolute  right-[-40px]">
-                                <FaChevronRight
-                                    size="34"
-                                />
-                            </button>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </section>
+            <PageOfItemsThree/>
             <div className=" mt-12 border-b-2"></div>
         </div>
     )

@@ -4,6 +4,9 @@ import {Button} from "@chakra-ui/react";
 import {addCart, removeCart} from "../../store/reducers/cart/cart";
 import {toast} from "react-toastify";
 import {ReactComponent as Cdek} from "../../assets/vectors/CDEK.svg"
+import {Work} from "../../components/work";
+import {ReactComponent as Price} from "../../assets/vectors/cartPrice.svg";
+import Order from "../../components/order/Order";
 
 const Cart = () => {
 
@@ -61,38 +64,15 @@ const Cart = () => {
                         ))
                     }
                 </ul>
-
-                {/*<div className="flex gap-4">*/}
-                {/*<Price/>*/}
-                {/*    <button style={{textDecoration:'underline'}}>Ввести купон</button>*/}
-                {/*</div>*/}
-
-                {/*<div className="flex justify-center">*/}
-                {/*    <h2>Общая сумма*/}
-                {/*        : {data.reduce((acc, rec) => acc + (rec?.priceSale || rec.price) * rec.count, 0)}</h2>*/}
-                {/*</div>*/}
-                <div style={{width:"360px", height:"436px", background: 'rgb(249, 249, 249)', marginLeft:'100px'}}>
-                    <h2 className="mt-8 ml-10 text-2xl">ВАШ ЗАКАЗ</h2>
-                    <div className="flex gap-28 mt-8 ml-10">
-                        <p className="font-semibold">Сумма заказа</p>
-                        <p className="font-semibold">{data.reduce((acc, rec) => acc + (rec?.priceSale || rec.price) * rec.count, 0)}</p>
-                    </div>
-                    <div className='flex gap-28 mt-8 ml-10'>
-                        <p className="font-semibold">Сумма скидки</p>
-                    </div>
-                    <div className='flex gap-44 mt-8 ml-10'>
-                        <p className="font-semibold">Итого</p>
-                        <p className="font-semibold">{data.reduce((acc, rec) => acc + (rec?.priceSale || rec.price) * rec.count, 0)}</p>
-                    </div>
-                    <div>
-                        <Cdek/>
-                        <p>Бесплатная доставка <br/>в случае покупки товара</p>
-                        <p>Доставка в случае отказа <br/> 1500 руб.</p>
-                    </div>
-                    <Button>ОФОРМИТЬ ЗАКАЗ</Button>
-                </div>
+           <Order/>
             </div>
+            <div className="flex gap-4 container">
+                <Price/>
+                <button style={{textDecoration:'underline'}}>Ввести купон</button>
+            </div>
+            <Work/>
         </section>
+
     );
 };
 

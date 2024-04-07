@@ -18,6 +18,10 @@ export const RoutesUrls = {
     cart:{
         path:'/cart',
         title:'Корзина'
+    },
+    payment:{
+        path:"/payment",
+        title:'Оплата'
     }
 }
 

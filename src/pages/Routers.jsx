@@ -8,6 +8,7 @@ import {Shoes} from "./shoes";
 import {RoutesUrls} from "../constans/routesUrls";
 import {ProductDetail} from "./product detail";
 import Cart from "./cart/Cart";
+import {Payment} from "./payment";
 
 const Routers = () => {
     return (
@@ -20,7 +21,7 @@ const Routers = () => {
                 <Route path={`${RoutesUrls.collection.path}/:slug`} element={<CollectionDetail/>}/>
                 <Route path={`${RoutesUrls.product.path}/:slug`} element={<ProductDetail/>}/>
                 <Route path={RoutesUrls.cart.path} element={<Cart/>}/>
-                <Route path='/payment' element={<h2>payment</h2>}/>
+                <Route path={RoutesUrls.payment.path} element={<Payment/>}/>
                 <Route path={RoutesUrls.shoes.path} element={<Shoes/>}/>
             </Route>
         </Routes>
