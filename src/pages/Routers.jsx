@@ -9,6 +9,7 @@ import {RoutesUrls} from "../constans/routesUrls";
 import {ProductDetail} from "./product detail";
 import Cart from "./cart/Cart";
 import {Payment} from "./payment";
+import {Filtered} from "../components/collectionsPage";
 
 const Routers = () => {
     return (
@@ -22,7 +23,7 @@ const Routers = () => {
                 <Route path={`${RoutesUrls.product.path}/:slug`} element={<ProductDetail/>}/>
                 <Route path={RoutesUrls.cart.path} element={<Cart/>}/>
                 <Route path={RoutesUrls.payment.path} element={<Payment/>}/>
-                <Route path={RoutesUrls.shoes.path} element={<Shoes/>}/>
+                <Route path={RoutesUrls.shoes.path} element={<Filtered/>}/>
             </Route>
         </Routes>
     );

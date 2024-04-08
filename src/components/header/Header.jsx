@@ -14,13 +14,14 @@ export function Header() {
 
     const cartCount = useSelector(state => state.cart.data.length)
 
+
     const {pathname} = useLocation()
 
     const onSwitchBurger = () => setBurgerActive(prev => !prev)
     return (
         <div>
             <div className='container'>
-                <div className='header-content  flex gap-4 justify-between pt-2 pb-7'>
+                <div className='header-content  flex gap-4 justify-between pt-6 pb-7'>
                     <div className=' header-content-logo flex items-center gap-4'>
                         <Icon onClick={onSwitchBurger}
                               as={burgerActive ? CloseIcon : HamburgerIcon}
@@ -40,7 +41,7 @@ export function Header() {
                             <Link to={RoutesUrls.payment.path} className=' inline-block h-full w-[130px] grid place-items-center hover:bg-[#dedede] transition-all'>Доставка</Link>
                         </li>
                         <li>
-                            <NavLink to='/cart' className=' inline-block h-full w-[130px] grid place-items-center hover:bg-[#dedede] transition-all'> {cartCount} Корзина</NavLink>
+                            <NavLink to='/cart' className=' inline-block h-full w-[130px] grid place-items-center hover:bg-[#dedede] transition-all'> <div className="cart-count">{cartCount}</div> Корзина</NavLink>
                         </li>
                     </ul>
                 </div>
