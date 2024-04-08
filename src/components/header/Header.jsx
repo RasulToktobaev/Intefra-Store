@@ -6,10 +6,13 @@ import {Link, NavLink, useLocation} from "react-router-dom";
 import {FaSearch} from "react-icons/fa";
 import { BreadNavigation} from "../breadNavigation";
 import {RoutesUrls} from "../../constans/routesUrls";
+import {useSelector} from "react-redux";
 
 
 export function Header() {
     const [burgerActive, setBurgerActive] = useState(false)
+
+    const cartCount = useSelector(state => state.cart.data.length)
 
     const {pathname} = useLocation()
 
@@ -34,10 +37,10 @@ export function Header() {
                     </FormControl>
                     <ul className='flex header-list'>
                         <li>
-                            <NavLink to='./shipping' className=' inline-block h-full w-[130px] grid place-items-center hover:bg-[#dedede] transition-all'>Доставка</NavLink>
+                            <Link to={RoutesUrls.payment.path} className=' inline-block h-full w-[130px] grid place-items-center hover:bg-[#dedede] transition-all'>Доставка</Link>
                         </li>
                         <li>
-                            <NavLink to='/cart' className=' inline-block h-full w-[130px] grid place-items-center hover:bg-[#dedede] transition-all'>Корзина</NavLink>
+                            <NavLink to='/cart' className=' inline-block h-full w-[130px] grid place-items-center hover:bg-[#dedede] transition-all'> {cartCount} Корзина</NavLink>
                         </li>
                     </ul>
                 </div>

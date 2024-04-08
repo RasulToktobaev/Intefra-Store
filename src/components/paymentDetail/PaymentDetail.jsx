@@ -1,12 +1,14 @@
 import React from 'react';
 import {Input} from "@chakra-ui/react";
+import Order from "../order/Order";
+import YourOrder from "../yourOrder/YourOrder";
 
 const PaymentDetail = () => {
     return (
-        <section>
-            <div className="container">
-                <h2>ДЕТАЛИ ОПЛАТЫ</h2>
-                <div>
+        <section className="flex container">
+            <div>
+                <h2 className="text-xl font-semibold pt-17 pb-8">ДЕТАЛИ ОПЛАТЫ</h2>
+                <div className="flex gap-7 mb-10">
                     <Input
                         placeholder="Имя *"
                         width="380px"
@@ -20,23 +22,23 @@ const PaymentDetail = () => {
                         height="47px"
                     />
                 </div>
-                <div>
-                   <h3>Выберите способ получения заказа:</h3>
-                   <h3>Страна/регион</h3>
+                <div className="flex gap-64">
+                   <h3 className="font-semibold text-xl">Выберите способ получения заказа:</h3>
+                   <h3 className="font-semibold text-xl">Страна/регион</h3>
                 </div>
-                <div>
-                    <div>
+                <div className="flex gap-36 mt-7">
+                    <div className="flex gap-4">
                         <input type="checkbox"/>
-                        <p>Доставка на дом</p>
+                        <p className="text-black font-normal ">Доставка на дом</p>
                     </div>
-                    <div>
+                    <div className="flex gap-4">
                         <input type="checkbox"/>
                         <p>Пункт выдачи СДЭК</p>
                     </div>
                     <p>Россия</p>
                 </div>
-                <h3>Адрес </h3>
-                <div>
+                <h3 className="font-semibold mt-10 mb-6 text-xl">Адрес </h3>
+                <div className="gap-8 flex mb-4">
                     <Input
                     width="229px"
                     height="47px"
@@ -50,7 +52,7 @@ const PaymentDetail = () => {
                         placeholder="Номер дома и название улицы *"
                     />
                 </div>
-                <div>
+                <div className="flex gap-8 mb-10">
                     <Input
                         height="47px"
                         borderRadius="none"
@@ -64,11 +66,13 @@ const PaymentDetail = () => {
                         width="389px"
                     />
                 </div>
-                <h3>Примечание к заказу</h3>
-                <textarea style={{width:'805px'}} cols="30" rows="50" ></textarea>
+                <h3 className="font-semibold text-xl mb-6">Примечание к заказу</h3>
+                <textarea style={{width:'805px', height:"143px", border:'2px solid grey', padding:"15px 21px"}} placeholder="Например, особые пожелания отделу доставки" cols="30" rows="50"  ></textarea>
             </div>
+           <YourOrder/>
         </section>
-    );
+
+);
 };
 
 export default PaymentDetail;

@@ -3,7 +3,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {Button} from "@chakra-ui/react";
 import {addCart, removeCart} from "../../store/reducers/cart/cart";
 import {toast} from "react-toastify";
-import {ReactComponent as Cdek} from "../../assets/vectors/CDEK.svg"
 import {Work} from "../../components/work";
 import {ReactComponent as Price} from "../../assets/vectors/cartPrice.svg";
 import Order from "../../components/order/Order";
