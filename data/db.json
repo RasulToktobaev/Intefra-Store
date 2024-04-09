@@ -261,10 +261,10 @@
       "image": {
         "black": "/Shop/sportsuitMenThree.jpg",
         "blue": "Shop/sportsuit5-blue.jpg",
-        "white": "Shop/sportsuit5-white.jpg",
+        "white": "/Shop/hoodyMenOne.jpg",
         "red": "Shop/sportsuit5-red.jpg",
         "pink": "Shop/sportsuit5.jpg",
-        "grey": "Shop/sportsuit5-grey.jpg",
+        "grey": "/Shop/hoodyMenOne-white.jpg",
         "beige": "Shop/sportsuit5-beige.jpg"
       },
       "category": "sportsuit",
@@ -291,9 +291,9 @@
       "gender": "woman",
       "image": {
         "black": "/Shop/sweatshirt5.jpg",
-        "white": "Shop/sweatshirt5-white.jpg",
-        "red": "Shop/sweatshirt5-red.jpg",
-        "grey": "Shop/sweatshirt5-grey.jpg"
+        "white": "/Shop/sweatshirt5-white.jpg",
+        "grey": "/Shop/sweatshirt5-red.jpg",
+        "red": "/Shop/sweatshirt5-grey.jpg"
       },
       "category": "sweatshirt",
       "size": [
@@ -317,9 +317,9 @@
       "gender": "man",
       "image": {
         "black": "/Shop/sweatshirtMenOne.jpg",
-        "white": "Shop/sweatshirt4-white.jpg",
+        "white": "/Shop/hoodyMenTwo-white.jpg",
         "red": "Shop/sweatshirt4-red.jpg",
-        "grey": "Shop/sweatshirt4-grey.jpg"
+        "grey": "/Shop/hoodyMenThree-grey.jpg"
       },
       "category": "sweatshirt",
       "size": [
@@ -342,14 +342,14 @@
       "gender": "woman",
       "image": {
         "pink": "/Shop/sweatshirt3-pink.jpg",
-        "white": "Shop/sweatshirt3-white.jpg",
+        "white": "/Shop/sweatshirt3-white.jpg",
         "blue": "Shop/sweatshirt3-blue.jpg",
         "red": "Shop/sweatshirt3-red.jpg",
         "khaki": "Shop/sweatshirt3-khaki.jpg",
         "beige": "Shop/sweatshirt3-beige.jpg",
-        "grey": "Shop/sweatshirt3-grey.jpg",
+        "grey": "/Shop/sweatshirt3-grey.jpg",
         "aqua": "Shop/sweatshirt3-aqua.jpg",
-        "black": "Shop/sweatshirt3.jpg"
+        "black": "/Shop/sweatshirt3.jpg"
       },
       "category": "sweatshirt",
       "size": [
@@ -378,14 +378,11 @@
       "gender": "man",
       "image": {
         "pink": "/Shop/sweatshirt2.jpg",
-        "white": "Shop/sweatshirt2-white.jpg",
+        "white": "/Shop/sweatshirt2-white.jpg",
         "blue": "Shop/sweatshirt2-blue.jpg",
-        "red": "Shop/sweatshirt2-red.jpg",
-        "khaki": "Shop/sweatshirt2-khaki.jpg",
-        "beige": "Shop/sweatshirt2-beige.jpg",
-        "grey": "Shop/sweatshirt2-grey.jpg",
+        "grey": "/Shop/sweatshirt2-grey.jpg",
         "aqua": "Shop/sweatshirt2-aqua.jpg",
-        "black": "Shop/sweatshirtMenTwo.jpg"
+        "black": "/Shop/sweatshirtMenTwo.jpg"
       },
       "category": "sweatshirt",
       "size": [
@@ -413,9 +410,9 @@
       "gender": "woman",
       "image": {
         "black": "/Shop/sweatshirt1.jpg",
-        "white": "Shop/sweatshirt1-white.jpg",
+        "white": "/Shop/sweatshirt1-white.jpg",
         "red": "Shop/sweatshirt1-red.jpg",
-        "grey": "Shop/sweatshirt1-grey.jpg"
+        "grey": "/Shop/sweatshirt1-grey.jpg"
       },
       "category": "sweatshirt",
       "size": [
@@ -442,11 +439,11 @@
         "beige": "Shop/tshort1-beige.jpg",
         "blue": "Shop/tshort1-blue.jpg",
         "brown": "Shop/tshort1-brown.jpg",
-        "grey": "Shop/tshort1-grey.jpg",
+        "grey": "/Shop/tshort1MenTwo-grey.jpg",
         "orange": "Shop/tshort1-orange.jpg",
         "pink": "Shop/tshort1-pink.jpg",
         "red": "Shop/tshort1-red.jpg",
-        "white": "Shop/tshort1-white.jpg"
+        "white": "/Shop/tshort1MenTwo-white.jpg"
       },
       "category": "tshort",
       "size": [
@@ -473,12 +470,12 @@
       "price": 520,
       "gender": "woman",
       "image": {
-        "beige": "/Shop/tshort2-beige.jpg",
+        "grey": "/Shop/tshort2-beige.jpg",
         "brown": "Shop/tshort2-brown.jpg",
-        "black": "Shop/tshort2-grey.jpg",
+        "black": "/Shop/tshort2-grey.jpg",
         "pink": "Shop/tshort2-pink.jpg",
         "red": "Shop/tshort2-red.jpg",
-        "white": "Shop/tshort2.jpg"
+        "white": "/Shop/tshort2.jpg"
       },
       "category": "tshort",
       "size": [
@@ -508,11 +505,11 @@
         "beige": "Shop/tshort3-beige.jpg",
         "blue": "Shop/tshort3-blue.jpg",
         "brown": "Shop/tshort3-brown.jpg",
-        "grey": "Shop/tshort3-grey.jpg",
+        "grey": "/Shop/tshort3-grey.jpg",
         "orange": "Shop/tshort3-orange.jpg",
         "pink": "Shop/tshort3-pink.jpg",
         "red": "Shop/tshort3-red.jpg",
-        "white": "Shop/tshort3.jpg"
+        "white": "/Shop/tshort3.jpg"
       },
       "category": "tshort",
       "size": [
@@ -541,11 +538,11 @@
       "gender": "woman",
       "image": {
         "beige": "/Shop/tshort4-beige.jpg",
-        "black": "Shop/tshort4-blue.jpg",
+        "black": "/Shop/tshort4-blue.jpg",
         "brown": "Shop/tshort4.jpg",
-        "grey": "Shop/tshort4-grey.jpg",
+        "grey": "/Shop/tshort4-grey.jpg",
         "orange": "Shop/tshort4-orange.jpg",
-        "pink": "Shop/tshort4-pink.jpg"
+        "white": "/Shop/tshort4-pink.jpg"
       },
       "category": "tshort",
       "size": [
@@ -570,15 +567,11 @@
       "price": 500,
       "gender": "woman",
       "image": {
-        "black": "Shop/tshort5.jpg",
-        "beige": "Shop/tshort5-beige.jpg",
+        "black": "/Shop/tshort5.jpg",
         "blue": "Shop/tshort5-blue.jpg",
         "brown": "Shop/tshort5-brown.jpg",
-        "grey": "Shop/tshort5-grey.jpg",
-        "orange": "Shop/tshort5-orange.jpg",
-        "pink": "Shop/tshort5-pink.jpg",
-        "red": "Shop/tshort5-red.jpg",
-        "white": "Shop/tshort5.jpg"
+        "grey": "/Shop/tshort5-grey.jpg",
+        "white": "/Shop/tshort5.jpg"
       },
       "category": "tshort",
       "size": [
@@ -609,11 +602,11 @@
         "beige": "Shop/tshort5-beige.jpg",
         "blue": "Shop/tshort5-blue.jpg",
         "brown": "Shop/tshort5-brown.jpg",
-        "grey": "Shop/tshort5-grey.jpg",
+        "grey": "/Shop/tshort5Men-grey.jpeg",
         "orange": "Shop/tshort5-orange.jpg",
         "pink": "Shop/tshort5-pink.jpg",
         "red": "Shop/tshort5-red.jpg",
-        "white": "Shop/tshort5.jpg"
+        "white": "/Shop/tshort5Men.jpg"
       },
       "category": "tshort",
       "size": [
@@ -645,11 +638,11 @@
         "beige": "Shop/tshort5-beige.jpg",
         "blue": "Shop/tshort5-blue.jpg",
         "brown": "Shop/tshort5-brown.jpg",
-        "grey": "Shop/tshort5-grey.jpg",
+        "grey": "/Shop/tshortMenThree-grey.jpeg",
         "orange": "Shop/tshort5-orange.jpg",
         "pink": "Shop/tshort5-pink.jpg",
         "red": "Shop/tshort5-red.jpg",
-        "white": "Shop/tshort5.jpg"
+        "white": "/Shop/thort5MenThree.jpg"
       },
       "category": "tshort",
       "size": [
@@ -677,8 +670,8 @@
       "gender": "man",
       "image": {
         "black": "/Shop/hoodyMenThree.jpeg",
-        "white": "Shop/hoody5-white.jpg",
-        "grey": "Shop/hoody5-grey.jpg"
+        "white": "/Shop/hoodyMenThree-white.jpg",
+        "grey": "/Shop/hoodyMenThree-grey.jpg"
       },
       "category": "hoody",
       "size": [
@@ -702,10 +695,10 @@
       "image": {
         "black": "/Shop/sportsuitWoman.jpg",
         "blue": "Shop/sportsuit4-blue.jpg",
-        "white": "Shop/sportsuit4-white.jpg",
+        "white": "/Shop/sportsuit4-white.jpg",
         "red": "Shop/sportsuit4-red.jpg",
         "pink": "Shop/sportsuit4-pink.jpg",
-        "grey": "Shop/sportsuit4-grey.jpg",
+        "grey": "/Shop/sportsuit4-grey.jpg",
         "beige": "Shop/sportsuit4-beige.jpg"
       },
       "category": "sportsuit",

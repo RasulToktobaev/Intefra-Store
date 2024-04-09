@@ -5,19 +5,30 @@ import shoes from "../../assets/images/shoes.jpg";
 import mexom from "../../assets/images/Mexom.jpg";
 import open from "../../assets/images/Open-walk.jpg";
 import keds from "../../assets/images/Keds.jpg";
-import React from "react";
+import React, {useEffect} from "react";
 import {useState} from "react";
 import ProductCard from "../../components/collectionsPage/category-cards/category-card";
-import arrowD from "../../assets/images/Arrow-down.jpg"
-import arrowU from "../../assets/images/Arrow-up.jpg"
 import ProductCardBruno from "../../components/collectionsPage/category-cards/category-card-item3";
 import ProductCardDiscount from "../../components/collectionsPage/category-cards/category-card-disc";
+import { FaArrowDown, FaArrowUp } from "react-icons/fa6";
+import {animateScroll as scroll} from "react-scroll";
+import {getCollection} from "../../store/reducers/clothes/clothes";
+import {useDispatch} from "react-redux";
 
 
 export function Filtered() {
     const [priceRange, setPriceRange] = useState({ min: 0, max: 100000 });
 
+    const dispatch = useDispatch()
 
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
+    useEffect(() => {
+        dispatch(getCollection())
+        scrollToTop()
+    }, []);
     const handlePriceChange = (value) => {
         setPriceRange(value);
     };
@@ -30,46 +41,46 @@ export function Filtered() {
             </div>
             <div className="container flex brand-content">
                 <div className=" brand-box border-solid px-6 border-r border-gray">
-                    <p>Loro Piana</p>
+                    <p className="underline">Loro Piana</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Kiton</p>
+                    <p className="underline">Kiton</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Brunello Cucinelli</p>
+                    <p className="underline">Brunello Cucinelli</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Santoni</p>
+                    <p className="underline">Santoni</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Moreschi</p>
+                    <p className="underline">Moreschi</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Barrett</p>
+                    <p className="underline">Barrett</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Testoni</p>
+                    <p className="underline">Testoni</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Artigiani</p>
+                    <p className="underline">Artigiani</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Moreschi</p>
+                    <p className="underline">Moreschi</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Zegna</p>
+                    <p className="underline">Zegna</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>Valentino</p>
+                    <p className="underline">Valentino</p>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <p>и другие…</p>
+                    <p className="underline">и другие…</p>
                 </div>
 
             </div>
             <div className="filtered-sort">
                 <div className="container flex brand-content">
-                    <div className=" brand-box border-solid px-5 py-20  mr-7 ">
+                    <div className="  brand-box border-solid px-5 py-20  mr-7 ">
                         <img className="brand-image" src={shoes} alt=""/>
                         <br/>
                         <br/>
@@ -117,46 +128,46 @@ export function Filtered() {
 
             <div className="container ">
 
-                <h2 className="pb-7 font-bold">Категории</h2>
+                <h2 className="pb-7 font-bold mt-16">Категории</h2>
                 <div className="category-bar flex flex-col">
                     <div className="category-bar-block flex mb-3">
-                        <p>Все</p>
+                        <p className="text-gray">Все</p>
                         <button className="details-btn--active rounded-full text-lg  pl-5 pr-5"
                                 style={{marginLeft: '200px'}}>6
                         </button>
                     </div>
                     <div className="category-bar-block flex mb-3">
-                        <p>Ботинки</p>
+                        <p className="text-gray">Ботинки</p>
                         <button className="category-btn rounded-full text-lg  pl-5 pr-5"
                                 style={{marginLeft: '165px'}}>6
                         </button>
                     </div>
                     <div className="category-bar-block flex mb-3">
-                        <p>Кросовки и кеды</p>
+                        <p className="text-gray">Кросовки и кеды</p>
                         <button className="category-btn rounded-full text-lg pl-5 pr-5"
                                 style={{marginLeft: '100px'}}>6
                         </button>
                     </div>
                     <div className="category-bar-block flex mb-3">
-                        <p>Обувь с мехом</p>
+                        <p className="text-gray">Обувь с мехом</p>
                         <button className="category-btn rounded-full text-lg  pl-5 pr-5"
                                 style={{marginLeft: '115px'}}>6
                         </button>
                     </div>
                     <div className="category-bar-block flex mb-3">
-                        <p>Open-walk</p>
+                        <p className="text-gray">Open-walk</p>
                         <button className="category-btn rounded-full text-lg  pl-5 pr-5"
                                 style={{marginLeft: '149px'}}>6
                         </button>
                     </div>
                     <div className="category-bar-block flex mb-3">
-                        <p>Скидки до -70%</p>
+                        <p className="text-gray">Скидки до -70%</p>
                         <button className="category-btn rounded-full text-lg  pl-5 pr-5"
                                 style={{marginLeft: '110px'}}>6
                         </button>
                     </div>
                     <div className="category-bar-block flex mb-3">
-                        <p>Летняя обувь</p>
+                        <p className="text-gray">Летняя обувь</p>
                         <button className="category-btn rounded-full text-lg  pl-5 pr-5"
                                 style={{marginLeft: '129px'}}>6
                         </button>
@@ -169,19 +180,27 @@ export function Filtered() {
                 <div className="category-bar flex flex-col">
                     <div className="flex">
                     <h2 className="pt-10 font-bold pb-10">Пол</h2>
-                    <div className="arrow-down"  style={{marginLeft: '205px' , marginTop:'40px'}}><img src={arrowD} alt=""/></div>
+                        <div style={{marginLeft:'205px', marginTop:"40px"}}>
+                            <FaArrowDown />
+                        </div>
                     </div>
                     <div className="flex">
                         <h2 className="pb-10 font-bold">Бренд</h2>
-                        <div className="arrow-down" style={{marginLeft: '190px', marginTop: '4px'}}><img src={arrowD} alt=""/></div>
+                        <div  style={{marginLeft: '190px', marginTop: '4px'}}>
+                            <FaArrowDown/>
+                        </div>
                     </div>
                     <div className="flex">
                         <h2 className="pb-10 font-bold">Размер</h2>
-                        <div className="arrow-down" style={{marginLeft: '183px', marginTop: '1px'}}><img src={arrowD} alt=""/></div>
+                        <div style={{marginLeft: '183px', marginTop: '1px'}}>
+                            <FaArrowDown/>
+                        </div>
                     </div>
                     <div className="flex">
                         <h2 className=" pb-10 font-bold">Цвет</h2>
-                        <div className="arrow-down" style={{marginLeft: '202px', marginBottom: '1px' , width:'20'}}><img src={arrowU} alt=""/></div>
+                        <div style={{marginLeft: '202px', marginBottom: '1px' , width:'20'}}>
+                            <FaArrowUp />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,7 +284,7 @@ export function Filtered() {
                 </div>
             </div>
 
-                <div className="products-container">
+                <div className="products-container mt-96">
                     <div className="products-card-one">
                         <ProductCard/>
                     </div>

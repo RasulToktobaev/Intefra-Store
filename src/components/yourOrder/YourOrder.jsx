@@ -24,12 +24,12 @@ const YourOrder = () => {
                         }} src={item.image.black} alt=""/>
                         <div>
                             <p className="pl-4">{item.title}</p>
-                            <div className="mt-6">
-                                {
-                                    item.size.map((size) => (
-                                        <span className="px-2 py-4">{size}</span>
-                                    ))
-                                }
+                            <div className="mt-6 flex gap-4">
+                               <p className="text-gray"> Размеры:{
+                                   item.size.map((size) => (
+                                       <span className="px-2 py-2">{size}</span>
+                                   ))
+                               }</p>
                                 <span>Количество:{item.count}</span>
                             </div>
                         </div>

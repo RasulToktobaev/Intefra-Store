@@ -2,9 +2,28 @@ import {ReactComponent as Logo} from '../../assets/vectors/logo.svg'
 import {ReactComponent as FooterSvg} from "../../assets/vectors/footer-svg.svg";
 import {ReactComponent as Instagram} from "../../assets/vectors/instagram.svg";
 import {ReactComponent as Telegram} from "../../assets/vectors/telegram.svg";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+import {RoutesUrls} from "../../constans/routesUrls";
+import {animateScroll as scroll} from "react-scroll";
+import {useEffect} from "react";
+import {getOneProduct} from "../../store/reducers/oneProduct/oneProduct";
+import {useDispatch, useSelector} from "react-redux";
 
 export function Footer() {
+
+    const dispatch = useDispatch()
+
+    const params = useParams()
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
+    useEffect(() => {
+        dispatch(getOneProduct({id: params.slug}))
+        scrollToTop()
+    }, []);
+
     return (
         <div className="border-t border-solid border-orange mt-10">
             <div className=" footer-content container  ">
@@ -17,7 +36,7 @@ export function Footer() {
                 </div>
                 <div>
                     <ul className="footer-list">
-                        <li className="footer-list-item"> Обувь</li>
+                        <Link to={RoutesUrls.shoes.path} className="footer-list-item"> Обувь</Link>
                         <li className="footer-list-item"> Джинсы и брюки</li>
                         <li className="footer-list-item"> Верхняя одежда</li>
                         <li className="footer-list-item"> Спортивные костюмы</li>

@@ -15,22 +15,22 @@ export function Brand() {
 
             <div className="container flex brand-content">
                 <div className=" brand-box border-solid px-6 border-r border-gray">
-                    <img className="brand-image" src={brandOne} alt=""/>
+                    <img className="brand-Image" src={brandOne} alt=""/>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <img className="brand-image" src={brandTwo} alt=""/>
+                    <img className="brand-Image" src={brandTwo} alt=""/>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <img className="brand-image" src={brandThree} alt=""/>
+                    <img className="brand-Image" src={brandThree} alt=""/>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <img className="brand-image" src={brandFour} alt=""/>
+                    <img className="brand-Image" src={brandFour} alt=""/>
                 </div>
                 <div className="border-solid px-6 border-r border-gray">
-                    <img className="brand-image" src={brandFive} alt=""/>
+                    <img className="brand-Image" src={brandFive} alt=""/>
                 </div>
                 <div className="">
-                    <img className="brand-image" src={brandSix} alt=""/>
+                    <img className="brand-Image" src={brandSix} alt=""/>
                 </div>
 
             </div>

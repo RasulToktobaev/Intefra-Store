@@ -5,7 +5,7 @@ function ProductCard({product}) {
     return (
         <div className="product-card">
             <a className="product-card__image" href="#" target="_blank">
-                <img src={clothesOne} alt="Product List Card UI"/>
+                <img style={{backgroundColor:"inherit"}} src={clothesOne} alt="Product List Card UI"/>
             </a>
             <div className="product-card__body">
                 <a className="product-card__subtitle text-center" href="#"><p>Женская сумка-клатч <br/>

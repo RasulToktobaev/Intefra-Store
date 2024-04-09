@@ -73,15 +73,14 @@
 }
 
 .brand-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
 }
 
 
 .brand-image {
     width: 140px;
     height: 91px;
+    object-fit: cover;
 }
 
 .brand-line {
@@ -683,7 +682,7 @@
 
 .products-card-two {
     position: absolute;
-    top: 31.29%;
+    top: 32%;
     left: 52%;
 }
 
@@ -734,4 +733,14 @@
     border: 1px solid rgb(217, 217, 217);
     background: rgb(255, 255, 255);
     color: rgb(217, 217, 217);
+}
+
+.brand-box{
+    background: linear-gradient(180.00deg, rgb(251, 251, 251),rgb(244, 244, 244) 100%);
+}
+
+.brand-image{
+    object-fit: cover;
+    width: 180px;
+    height: 183px;
 }
