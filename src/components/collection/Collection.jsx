@@ -28,7 +28,7 @@ export function Collection() {
 					<div>
 						<img className="collection-img" src={collectionThree} alt="" />
 						<p className="collection-text">
-							Парка Artigiani, джемпер Artigiani <br />
+							Бейсболка Artigiani, джемпер Artigiani <br />
 							,джинсы Jacob Cohen, челси Santoni
 						</p>
 					</div>
