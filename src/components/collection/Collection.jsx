@@ -21,7 +21,7 @@ export function Collection() {
 						<img className="collection-img" src={collectionTwo} alt="" />
 						<p className="collection-text">
 							Пуховый жилет Kiton, джинсы Jacob Cohen <br />, футболка Collins,
-							кроссовки Valentino, <br /> бейсболка Kiton
+							кроссовки Adidas, <br /> бейсболка Kiton
 						</p>
 					</div>
 					<div>
