@@ -14,8 +14,7 @@ export function Collection() {
 					<div>
 						<img className="collection-img" src={collectionOne} alt="" />
 						<p className="collection-text">
-							Спортивный костюм Artigiani, футболка <br /> Artigiani, кеды
-							Santoni
+							Спортивный костюм Armani, футболка <br /> Artigiani, кеды Santoni
 						</p>
 					</div>
 					<div>
