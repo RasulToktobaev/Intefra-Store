@@ -23,7 +23,7 @@ export function CollectionDetailsCard() {
 				</div>
 				<div>
 					<span className="details-price mr-4">130 000 ₽</span>
-					<span style={{ color: 'red', fontWeight: '700' }}>96 000 ₽</span>
+					<span style={{ color: 'red', fontWeight: '700' }}>95 000 ₽</span>
 				</div>
 			</div>
 
