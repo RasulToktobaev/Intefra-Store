@@ -34,7 +34,7 @@ export function CollectionDetailsCard() {
 				height="38px"
 				borderRadius="none"
 			>
-				Bye
+				Купить
 			</Button>
 		</div>
 	)
