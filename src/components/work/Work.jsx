@@ -20,7 +20,7 @@ export function Work() {
 					<Two />
 				</div>
 				<p className="work-text-two">
-					90% <br />
+					100% <br />
 					оригинальные вещи
 				</p>
 				<div className="work-line-two"></div>
