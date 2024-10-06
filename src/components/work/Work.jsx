@@ -11,7 +11,7 @@ export function Work() {
 					<One />
 				</div>
 				<p className="work-text">
-					Работаем с <br /> 2012 года
+					Работаем с <br /> 2013 года
 				</p>
 				<div className="work-line"></div>
 			</div>
