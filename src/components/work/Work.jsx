@@ -31,7 +31,7 @@ export function Work() {
 				</div>
 				<p className="work-text">
 					Доставка <br />
-					по России
+					по СНГ
 				</p>
 				<div className="work-line-three"></div>
 			</div>
