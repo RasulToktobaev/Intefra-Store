@@ -9,7 +9,7 @@ export function CollectionDetailsCard() {
 				<img className="details-img" src={details} alt="" />
 				<div>
 					<p className="details-text">
-						Жилет с капюшоном и <br /> пуховым покровом <br />{' '}
+						Жилет с капюшоном и <br /> меховым покровом <br />{' '}
 						<span style={{ fontWeight: '700' }}>Cortigiani</span>
 					</p>
 					<div className="details-buttons">
