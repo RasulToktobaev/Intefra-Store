@@ -41,7 +41,7 @@ export function Work() {
 				</div>
 				<p className="work-text">
 					Есть услуга <br />
-					“Примерки”
+					"Примерочная"
 				</p>
 				<div className="work-line-four"></div>
 			</div>
