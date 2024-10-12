@@ -31,7 +31,7 @@ export function CollectionDetailsCard() {
 				colorScheme="blue"
 				background="rgb(25, 4, 4);"
 				width="160px"
-				height="38px"
+				height="37px"
 				borderRadius="none"
 			>
 				Купить
