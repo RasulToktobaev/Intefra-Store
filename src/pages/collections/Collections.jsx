@@ -5,7 +5,7 @@ export function Collections() {
 	return (
 		<>
 			<Filtered />
-			<Card />
+			<Cards />
 			<Work />
 		</>
 	)
